@@ -90,7 +90,7 @@
     <path d="M257.5,179.5c82.87,5.55,87.06,118,1.5,126.5-4.64.46-13-1.09-16.5-2-30.53-8-56.29-43.79-42-85,5.67-16.35,20.52-29.8,39.5-36.5Z" fill-rule="evenodd"/>
     <path d="M253.5,206c-16,6.68-26,11.67-30.5,29.5-6.24,24.78,18.7,48.77,43.5,43C307.45,269,304.41,205,253.5,206Z" fill-rule="evenodd"/>
     <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="360 258.2 242.9" to="0 258.2 242.9" begin="0s" dur="1s" repeatCount="indefinite"/></g>
-  <g id="Layer_31" data-name="Layer 31" style="isolation: isolate" stroke="blue" fill="transparent">
+  <g id="Layer_31 backwheel" data-name="Layer 31" style="isolation: isolate" stroke="blue" fill="transparent">
     <path d="M840.5,179.5c.17.33,6,.39,8.5.5,9.07.7,16.21,3.21,22,7,4.23,2.76,10.87,5.65,15.5,9.5,11.23,9.34,26.31,37.22,18.5,62-8.24,26.17-26.23,42.82-56.5,47C817,309.85,789,281.86,784,258.5c-2.4-11.14-2.41-31.08,2-40,7-14.22,21.76-31.2,39-36C828.42,181.55,834.38,180.84,840.5,179.5Z" fill-rule="evenodd"/>
     <path d="M838,205.5c-17.45,6.34-23.76,10.44-29,25.5-9.4,27.05,14.25,53,41,47.5C892.1,269.9,889,204.47,838,205.5Z" fill-rule="evenodd"/>
     <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="360 843.2 242.9" to="0 843.2 242.9" begin="0s" dur="1s" repeatCount="indefinite"/></g>
