@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+}
+
+section {
+  height: 50vh;
+  /* background-color: black; */
+}
+
+/* #the_section {
+  background-color: black;
+} */
+
+/* #the_section2 {
+  background-color: black;
+} */
+
+div {
+  /* height: 10vw; */
+  /* width: 20vw; */
+  /* filter: drop-shadow(0px 0px 3px #116466); */
+  /* filter: drop-shadow(3px 2px 3px #097c7c); */
+}
+
+#the_div {
+  /* background-color: cadetblue; */
+  width: 50vw;
+  filter: drop-shadow(3px 2px 3px #097c7c);
+}
+
+#wheels {
+  rotate: inherit;
+}

@@ -11,7 +11,7 @@ function loadSVG() {
         console.log("SVG loaded");
 
         // TODO: put the SVG into the DOM
-        document.querySelector("section").innerHTML = svgData;
+        document.querySelector("#the_div").innerHTML = svgData;
         // TODO: Start the animation
     startScrolling();
     })
