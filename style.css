@@ -2,6 +2,17 @@ body {
   background-color: black;
 }
 
+main {
+  color: aliceblue;
+}
+#list ul li {
+  display: inline-block;
+}
+
+ul li {
+  display: inline-block;
+}
+
 section {
   height: 50vh;
   /* background-color: black; */
