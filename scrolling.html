@@ -8,23 +8,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="the_section"></section>
+    <!-- <section id="the_section"></section> -->
     <section id="the_section2">
         <div id="the_div"></div>  
     </section>
-    <section>
+    <section class="carLine">
         <!-- <div id="line">
             <svg width="1000" height="1000">
-                <path d="M 850 100 l 0 1000" stroke="green" stroke-width="4" fill="none"/>
+                <path d="M 850 100 l 0 1000" stroke="blue" stroke-width="4" fill="none"/>
             </svg>
         </div> -->
         <div id="carScroll">
             <img class="carScroll" src="scroll.PNG" alt="">
         </div>
     </section>
-    <!-- <section id="section">
-
-    </section> -->
+    
+    <div id="timeline">
+        <h2>History</h2>
+    </div>
+    <section id="textScroll">
+        <div class="block block1">
+            <h2>TEXT try</h2>
+            <img width="500" src="/ideas/77590ee4-53ce-4644-b5dc-d79ea9f2bf48.jpg" alt="image"/>
+            <p>Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you?</p>
+        </div>
+        <div class="block block2">
+            <h2>TEXT try</h2>
+            <img width="500" src="/ideas/77590ee4-53ce-4644-b5dc-d79ea9f2bf48.jpg" alt="image"/>
+            <p>Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you?</p>
+        </div>
+        <div class="block block3">
+            <h2>TEXT try</h2>
+            <img width="500" src="/ideas/77590ee4-53ce-4644-b5dc-d79ea9f2bf48.jpg" alt="image"/>
+            <p>Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you?</p>
+        </div>
+        <div class="block block4">
+            <h2>TEXT try</h2>
+            <img width="500" src="/ideas/77590ee4-53ce-4644-b5dc-d79ea9f2bf48.jpg" alt="image"/>
+            <p>Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you?</p>
+        </div>
+    </section>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
@@ -35,9 +58,15 @@
 
         // gsap.to("#carScroll", {duration: 3, y: "10vw", scrollTrigger:{trigger:"#carScroll", scrub:true, markers:true, pin:true, start:"top 100%", end:"end 25%"}});
         // gsap.to("#carScroll", {duration: 5, y: "100vw", scrollTrigger:{trigger:"#carScroll", markers:true, scrub:true, pin:true, start:"top 50%", end:"bottom 25%", toggleActions:"play pause resume reset"}});
-        gsap.to("#carScroll", {y: "0vh",  scrollTrigger:{trigger:"#carScroll", markers:true, scrub:true, start:"top 50%", end:"bottom 25%", pin:true, pinType:"fixed", toggleActions:"play pause resume reset"}});
+        gsap.to("#carScroll", {y: "0vh",  scrollTrigger:{trigger:"#carScroll", markers:true, scrub:true, start:"top 40%", end:"bottom 25%", pin:true, toggleActions:"play pause resume reset"}});
         // gsap.to("#carScroll", {motionPath: {path: "#line"}});
         gsap.from("#the_div", {duration: 2, x: "450vw", scrollTrigger:{trigger:"#the_div"}});
+        gsap.from(".block1", {x: "-250vw", scrollTrigger:{trigger:"#timeline", markers:true, scrub:true, start:"top 100%", end:"bottom 25", pin:false, toggleActions:"play pause resume reset"}});
+        // gsap.from(".block1", {x: "-250vw", scrollTrigger:{trigger:".block1", markers:true, scrub:true, start:"top top", end:"bottom 25", pin:false, toggleActions:"play pause resume reset"}});
+        gsap.from(".block2", {x: "250vw", scrollTrigger:{trigger:".block1" , markers:false, scrub:true, start:"top 50%", end:"bottom 25%", pin:false, toggleActions:"play pause resume reset"}});
+        gsap.from(".block3", {x: "-250vw", scrollTrigger:{trigger:".block2", markers:false, scrub:true, start:"top 50%", end:"bottom 25%", pin:false, toggleActions:"play pause resume reset"}});
+        gsap.from(".block4", {x: "250vw", scrollTrigger:{trigger:".block3", markers:false, scrub:true, start:"top 50%", end:"bottom 25%", pin:false, toggleActions:"play pause resume reset"}});
+
 
     </script>
     <script src="script.js"></script>
