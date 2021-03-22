@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  /* background-color: black; */
   overflow-x: hidden;
 }
 
@@ -76,11 +76,11 @@ section {
 }
 
 h2 {
-  color: white;
+  color: black;
 }
 
 p {
-  color: white;
+  color: black;
 }
 
 #starter1 {
