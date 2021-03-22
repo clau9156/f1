@@ -13,19 +13,30 @@
         <div id="the_div"></div>  
     </section>
     <section>
+        <!-- <div id="line">
+            <svg width="1000" height="1000">
+                <path d="M 850 100 l 0 1000" stroke="green" stroke-width="4" fill="none"/>
+            </svg>
+        </div> -->
         <div id="carScroll">
             <img class="carScroll" src="scroll.PNG" alt="">
         </div>
     </section>
-    <section></section>
+    <!-- <section id="section">
+
+    </section> -->
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
     <script>
         gsap.registerPlugin(ScrollTrigger);
-        
-        gsap.from("#carScroll", {duration: 2, y: "450vw", scrollTrigger:{trigger:"#carScroll"}});
+        // gsap.to("#carScroll", {duration: 5, y: "45vw"});
+
+        // gsap.to("#carScroll", {duration: 3, y: "10vw", scrollTrigger:{trigger:"#carScroll", scrub:true, markers:true, pin:true, start:"top 100%", end:"end 25%"}});
+        // gsap.to("#carScroll", {duration: 5, y: "100vw", scrollTrigger:{trigger:"#carScroll", markers:true, scrub:true, pin:true, start:"top 50%", end:"bottom 25%", toggleActions:"play pause resume reset"}});
+        gsap.to("#carScroll", {y: "0vh",  scrollTrigger:{trigger:"#carScroll", markers:true, scrub:true, start:"top 50%", end:"bottom 25%", pin:true, pinType:"fixed", toggleActions:"play pause resume reset"}});
+        // gsap.to("#carScroll", {motionPath: {path: "#line"}});
         gsap.from("#the_div", {duration: 2, x: "450vw", scrollTrigger:{trigger:"#the_div"}});
 
     </script>

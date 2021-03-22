@@ -17,8 +17,18 @@ section {
   height: 50vh;
 }
 
+#carScroll {
+  display: flex;
+  align-content: center;
+  height: 200vh;
+}
+
 .carScroll {
-  height: 20vw;
+  height: 10vw;
+  display: fixed;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #the_div {
@@ -28,4 +38,8 @@ section {
 
 #wheels {
   rotate: inherit;
+}
+
+#section {
+  height: 100vh;
 }
