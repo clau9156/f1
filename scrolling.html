@@ -12,6 +12,11 @@
     <section id="the_section2">
         <div id="the_div"></div>  
     </section>
+    <section>
+        <div id="carScroll">
+            <img class="carScroll" src="scroll.PNG" alt="">
+        </div>
+    </section>
     <section></section>
 
 
@@ -20,7 +25,7 @@
     <script>
         gsap.registerPlugin(ScrollTrigger);
         
-        // gsap.from("#the_div", {duration: 2, x: "450vw", scrollTrigger:{trigger:"#the_div"}});
+        gsap.from("#carScroll", {duration: 2, y: "450vw", scrollTrigger:{trigger:"#carScroll"}});
         gsap.from("#the_div", {duration: 2, x: "450vw", scrollTrigger:{trigger:"#the_div"}});
 
     </script>
