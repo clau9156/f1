@@ -4,7 +4,6 @@ html body {
 }
 
 body {
-  /* background-color: black; */
   overflow-x: hidden;
 }
 
@@ -20,13 +19,13 @@ ul li {
 }
 
 section {
-  height: 50vh;
+  height: 20vh;
 }
 
 #carScroll {
   display: flex;
   align-content: center;
-  height: 200vh;
+  height: 350vh;
   z-index: 20;
 }
 
@@ -53,6 +52,11 @@ section {
 #line {
   z-index: 10;
   margin-left: 50%;
+  margin-right: 50%;
+}
+
+#lines {
+  z-index: 11;
 }
 
 .block {
@@ -62,6 +66,29 @@ section {
 .block > img {
   /* width: 30rem;
   height: auto; */
+}
+
+.leftSide {
+  width: 40%;
+  float: left;
+}
+
+.rightSide {
+  width: 50%;
+  float: right;
+  padding-top: 3vw;
+}
+
+#container {
+  background-color: rgba(250, 250, 250, 46%);
+  height: 30vw;
+  width: 100%;
+  backdrop-filter: blur(15px);
+}
+
+#heritageContainer {
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .blockLeft {
@@ -80,59 +107,28 @@ section {
 }
 
 .block1 {
-  grid-area: b1;
   float: left;
-  /* position: relative; */
 }
 
 .block2 {
-  grid-area: b2;
-
   float: right;
-  /* position: relative; */
 }
 
 .block3 {
-  /* margin-right: auto; */
-  grid-area: b3;
   float: left;
 }
 
 .block4 {
-  /* margin-left: auto; */
-  grid-area: b4;
   float: right;
 }
 
 .block5 {
-  /* margin-right: auto; */
-  grid-area: b5;
   float: left;
 }
 
 .block6 {
-  /* margin-left: auto; */
-  grid-area: b6;
   float: right;
 }
-
-/* #textScroll {
-  grid-area: textScroll;
-} */
-
-/* @media only screen and (min-width: 1100px) {
-  textScroll {
-      display: grid;
-       grid-template-columns: 1fr 1fr;
-      grid-template-areas: "b1 ."
-      ". b2"
-      "b3 ."
-      ". b4"
-      "b5 ."
-      ". b6";
-
-
-  } */
 
 h2 {
   color: black;
