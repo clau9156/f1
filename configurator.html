@@ -6,57 +6,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configurator Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="conf_style.css">
 </head>
 
 <body>
-    <main>
-        <ul id="list">
-            <li>CAR BRANDS</li>
-            <ul class="brands">
-                <li></li>
-            </ul>
-            <li>PARTS</li>
-            <ul class="parts">
-                <li>Rear Wing</li>
-                <li>Front Wing</li>
-                <li>Tiers</li>
-            </ul>
-            <li>COLORS</li>
-            <ul class="colors">
-                <li>Red</li>
-                <li>Blue</li>
-                <li>Green</li>
-                <li>Yellow</li>
-            </ul>
-            <li>MATERIALS</li>
-            <ul class="materials">
-                <!-- <li>Solid</li> -->
-                <li>Gloss</li>
-                <li>Matte</li>
-                <li>Metallic</li>
-                <li>Pearlescent</li>
-            </ul>
-            <!-- <li>TIERS</li>
-            <ul class="tiers">
-                <li></li>
-            </ul> -->
-            <li>TEAMS</li>
-            <ul class=teams>
-                <li>Mercedes Petronas</li>
-                <li>RedBull Racing</li>
-                <li>Ferrari</li>
-                <li>McLaren</li>
-                <li>Aston Martin Cognizant</li>
-                <li>Alpine</li>
-                <li>Alfa Romeo</li>
-                <li>Williams Racing</li>
-                <li>Haas</li>
-            </ul>
-        </ul>
-    </main>
+    <style>
+        #Layer_9_Image-2 {
+            pointer-events: none;
+        }
+    </style>
+    <header>
+        <div id="logo"></div>
+        <nav>
+            <a class="navButts" href="home.html"><span>Home</span></a>
+            <a class="navButts"><span>Car</span></a>
+            <a class="navButts"><span>Heritage</span></a>
+        </nav>
 
-    <script src="script.js"></script>
+    </header>
+    <main>
+        <div id="carholder">
+            <section>
+                <!-- CAR GOES HERE -->
+            </section>
+        </div>
+        <div id="configurate">
+            <h1>Mix and Match your favorite team colors:</h1>
+            <div id="colorbox">
+                <div id="firstteams">
+                    <p>Mercedes Petronas</p>
+                    <svg id="merc" viewBoX="0 0 70 10">
+                        <circle class="color1" cx="5" cy="5" r="4" stroke="black" stroke-width="0.3px" fill="#02DEDC" />
+                        <circle class="color2" cx="15" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            fill="#A6A8A7" />
+                        <circle class="color2" cx="25" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            fill="#1E1E1E" />
+                        <circle class="color2" cx="35" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            fill="#A60303" />
+                    </svg>
+                    <p>Red Bull Racing</p>
+                    <svg id="redbull" viewBoX="0 0 70 10">
+                        <circle class="color1" cx="5" cy="5" r="4" stroke="black" stroke-width="0.3px" fill="#FFED4B" />
+                        <circle class="color2" cx="15" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            fill="#FD1010" />
+                        <circle class="color2" cx="25" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            fill="#1B212F" />
+                    </svg>
+                </div>
+                <div id="secondteams">
+                    <p>Aston Martin</p>
+                    <svg id="aston" viewBoX="0 0 70 10">
+                        <circle class="color1" cx="5" cy="5" r="4" stroke="black" stroke-width="0.3px" fill="#003B39" />
+                        <circle class="color2" cx="15" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            fill="#009CA1" />
+                        <circle class="color2" cx="25" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            fill="#BF0B5F" />
+                    </svg>
+                    <p>Scuderia Ferrari/Alfa Romeo</p>
+                    <svg id="ferrari" viewBoX="0 0 70 10">
+                        <circle class="color1" cx="5" cy="5" r="4" stroke="black" stroke-width="0.3px" fill="#FF2800" />
+                        <circle class="color2" cx="15" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            fill="#570B1F" />
+                        <circle class="color2" cx="25" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            fill="#E4EBF2" />
+                        <circle class="color1" cx="35" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            fill="#47080B" />
+                    </svg>
+                </div>
+                <div id="thirdteams">
+                    <p>McLaren</p>
+                    <svg id="mclaren" viewBoX="0 0 70 10">
+                        <circle class="color1" cx="5" cy="5" r="4" stroke="black" stroke-width="0.3px" fill="#FC8814" />
+                        <circle class="color2" cx="15" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            fill="#0665FF" />
+                    </svg>
+                    <p>Alpine/Williams/Alpha Tauri</p>
+                    <svg id="mix" viewBoX="0 0 70 10">
+                        <circle class="color1" cx="5" cy="5" r="4" stroke="black" stroke-width="0.3px" fill="#003286" />
+                        <circle class="color2" cx="15" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            fill="#01D4FD" />
+                        <circle class="color2" cx="25" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            fill="#FFFFFF" />
+                        <circle class="color2" cx="35" cy="5" r="4" stroke="black" stroke-width="0.3px" fill="black" />
+
+                    </svg>
+                </div>
+            </div>
+            <h1>Complete the look:</h1>
+            <div id="extra_parts">
+                <figure class="option" data-feature="frontwing">
+                    <img src="./icons/frontwing1.png" alt="frontwing" />
+
+                </figure>
+                <figure class="option" data-feature="rearwing">
+                    <img src="./icons/rearwing.png" alt="rearwing" />
+
+                </figure>
+                <figure class="option" data-feature="halo">
+                    <img src="./icons/halo.png" alt="halo" />
+
+                </figure>
+
+            </div>
+            <h1>Add tyres:</h1>
+            <div id="tyres">
+                <figure class="option" data-feature="medium">
+                    <img src="./icons/medium_icon.png" alt="tripod" />
+
+                </figure>
+                <figure class="option" data-feature="wet">
+                    <img src="./icons/wet_icon.png" alt="trolley" />
+
+                </figure>
+                <figure class="option" data-feature="hard">
+                    <img src="./icons/hard_icon.png" alt="blanket" />
+
+                </figure>
+                <figure class="option" data-feature="soft">
+                    <img src="./icons/soft_icon.png" alt="waterbottle" />
+
+                </figure>
+                </figure>
+            </div>
+        </div>
+        </div>
+        <!-- <li>TIERS</li>
+        <ul class="tiers">
+            <li></li>
+        </ul> -->
+        </div>
+    </main>
+    <footer></footer>
+    <script src="conf.js"></script>
 </body>
 
 </html>

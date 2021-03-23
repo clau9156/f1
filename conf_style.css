@@ -1,0 +1,162 @@
+body {
+    color: black;
+    margin: 0;
+    background-color: #A8A9AD;
+    background-image: url(./images/background.png);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    font-family: 'Racing Sans One', cursive;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    
+}
+nav {
+    display: flex;
+    align-items: center;
+    height: 13vw;
+    margin-left: 20vw ;
+    
+}
+
+.navButts {
+    margin: 2vw;
+    font-size: 1.7vw;
+    padding: 2vw;
+    background-color:darkred;
+    transform: skew(-25deg);
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    border-radius: 1vw;
+    
+    
+}
+.navButts > span {
+    display: inline-block;
+    transform: skew(25deg);
+    text-decoration: none;
+    text-align: center;
+}
+
+
+#logo {
+    margin: 2vw 0  0 4vw;
+    width: 8vw;
+    height: 8vw;
+    background-image: url(./images/logo.png);
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#colorbox {
+   display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-area: tyres;
+    box-shadow: 3px 3px 8px #ddd;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+#carholder {
+width: 80%;
+}
+
+#tyres {
+    grid-area: tyres;
+    box-shadow: 3px 3px 8px #ddd;
+    border-radius: 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  #tyres .option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #aaa;
+  }
+
+  #tyres .option:hover {
+    filter: drop-shadow(0 0 0.75rem white);
+    cursor: pointer;
+  }
+  
+  #tyres .option.chosen {
+    text-decoration: underline;
+    color: #000;
+  }
+  
+  #tyres .option img {
+    width: 5vw;
+    height: auto;
+  }
+  
+  #tyres .option figcaption {
+    font-size: 20px;
+  }
+
+
+  #extra_parts {
+    grid-area: tyres;
+    box-shadow: 3px 3px 8px #ddd;
+    border-radius: 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  #extra_parts .option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #aaa;
+  }
+
+  #extra_parts .option:hover {
+    filter: drop-shadow(0 0 0.75rem white);
+    cursor: pointer;
+  }
+  
+  #extra_parts .option.chosen {
+    text-decoration: underline;
+    color: #000;
+  }
+  
+  #extra_parts .option img {
+    width: 5vw;
+    height: auto;
+  }
+  
+
+
+footer {
+    position: absolute;
+    top: 350vh;
+    height: 10vw;
+    width: 100%;
+    background-image: url(./images/footerTexture.jpg);
+    background-size: 40vw;
+}
+
+h1 {
+    text-align: left;
+   font-size: small; 
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+   text-align: left;
+   font-size: large; 
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: white;
+}
