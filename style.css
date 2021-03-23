@@ -28,7 +28,6 @@ section {
 .carScroll {
   height: 10vw;
   display: fixed;
-  align-content: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -61,19 +60,51 @@ section {
 
 .block1 {
   margin-right: auto;
+  grid-area: b1;
 }
 
 .block2 {
   margin-left: auto;
+  grid-area: b2;
 }
 
 .block3 {
   margin-right: auto;
+  grid-area: b3;
 }
 
 .block4 {
   margin-left: auto;
+  grid-area: b4;
 }
+
+.block5 {
+  margin-right: auto;
+  grid-area: b5;
+}
+
+.block6 {
+  margin-left: auto;
+  grid-area: b6;
+}
+
+/* #textScroll {
+  grid-area: textScroll;
+} */
+
+/* @media only screen and (min-width: 1100px) {
+  textScroll {
+      display: grid;
+       grid-template-columns: 1fr 1fr;
+      grid-template-areas: "b1 ."
+      ". b2"
+      "b3 ."
+      ". b4"
+      "b5 ."
+      ". b6";
+
+
+  } */
 
 h2 {
   color: black;
@@ -83,10 +114,62 @@ p {
   color: black;
 }
 
-#starter1 {
-  width: 10vw;
-  height: 10vw;
-  background-color: yellow;
+#timeline {
+  text-align: center;
+  font-size: 2em;
+}
+
+body {
+  color: black;
+  margin: 0;
+  background-color: #a8a9ad;
+  background-image: url(./images/background.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  font-family: "Racing Sans One", cursive;
+}
+header {
+  display: flex;
+  flex-direction: row;
+}
+nav {
+  display: flex;
+  align-items: center;
+  height: 13vw;
+  margin-left: 20vw;
+}
+
+.navButts {
+  margin: 2vw;
+  font-size: 1.7vw;
+  padding: 2vw;
+  background-color: rgba(250, 5, 21, 50%);
+  transform: skew(-25deg);
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border-radius: 1vw;
+}
+.navButts > span {
+  display: inline-block;
+  transform: skew(25deg);
+  text-decoration: none;
+  text-align: center;
+}
+
+#logo {
+  margin: 2vw 0 0 4vw;
+  width: 8vw;
+  height: 8vw;
+  background-image: url(./images/logo.png);
+  background-size: cover;
+}
+
+footer {
   position: absolute;
-  top: 30vw;
+  top: 600vh;
+  height: 10vw;
+  width: 100%;
+  background-image: url(./images/footerTexture.jpg);
+  background-size: 40vw;
 }

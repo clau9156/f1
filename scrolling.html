@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="home.css">
 </head>
 <body>
     <header>
@@ -35,10 +34,16 @@
             <img class="carScroll" src="scroll.PNG" alt="">
         </div>
     </section>
-    
     <div id="timeline">
         <h2>History</h2>
     </div>
+    <section class="carLine">
+         <div id="line">
+            <svg width="1000" height="3500">
+                <path d="M 840 0 l 0 3500" stroke="blue" stroke-width="4" fill="none"/>
+            </svg>
+        </div>
+    </section>
     <section id="textScroll">
         <div class="block block1">
             <h2>TEXT try</h2>
@@ -60,9 +65,19 @@
             <img width="500" src="/ideas/77590ee4-53ce-4644-b5dc-d79ea9f2bf48.jpg" alt="image"/>
             <p>Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you?</p>
         </div>
+        <div class="block block5">
+            <h2>TEXT try</h2>
+            <img width="500" src="/ideas/77590ee4-53ce-4644-b5dc-d79ea9f2bf48.jpg" alt="image"/>
+            <p>Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you?</p>
+        </div>
+        <div class="block block6">
+            <h2>TEXT try</h2>
+            <img width="500" src="/ideas/77590ee4-53ce-4644-b5dc-d79ea9f2bf48.jpg" alt="image"/>
+            <p>Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you?</p>
+        </div>
     </section>
 </main>
-<footer>
+<footer class="footer">
 
 </footer>
 
@@ -82,6 +97,8 @@
         gsap.from(".block2", {x: "250vw", scrollTrigger:{trigger:".block1" , markers:false, scrub:true, start:"top 50%", end:"bottom 25%", pin:false, toggleActions:"play pause resume reset"}});
         gsap.from(".block3", {x: "-250vw", scrollTrigger:{trigger:".block2", markers:false, scrub:true, start:"top 50%", end:"bottom 25%", pin:false, toggleActions:"play pause resume reset"}});
         gsap.from(".block4", {x: "250vw", scrollTrigger:{trigger:".block3", markers:false, scrub:true, start:"top 50%", end:"bottom 25%", pin:false, toggleActions:"play pause resume reset"}});
+        gsap.from(".block5", {x: "-250vw", scrollTrigger:{trigger:".block4", markers:false, scrub:true, start:"top 50%", end:"bottom 25%", pin:false, toggleActions:"play pause resume reset"}});
+        gsap.from(".block6", {x: "250vw", scrollTrigger:{trigger:".block5", markers:false, scrub:true, start:"top 50%", end:"bottom 25%", pin:false, toggleActions:"play pause resume reset"}});
 
 
     </script>
