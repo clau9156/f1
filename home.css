@@ -18,6 +18,7 @@ h1{
 h3{
     font-size: 1.4vw;
 }
+/* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER */
 header {
   display: flex;
   flex-direction: row;
@@ -57,6 +58,22 @@ nav {
   background-image: url(./images/logo.png);
   background-size: cover;
 }
+/*MAIN MAIN  MAIN MAIN MAIN MAIN  MAIN MAIN MAIN MAIN  MAIN MAIN MAIN MAIN */
+
+#triggerOne{
+    height: 25vw;
+    width: 1vw;
+    position: absolute;
+    top: 5vw;
+    left: 20vw;
+}
+#triggerTwo{
+    height: 15vw;
+    width: 1vw;
+    position: absolute;
+    top: 65vw;
+    left: 20vw;
+}
 
 .container {
     display: grid;
@@ -91,9 +108,25 @@ nav {
     margin-right: -15vw;
     
 }
+
+
+#heritDivImg{
+    margin-top: 5vw ;
+    display: flex;
+    align-items: center;
+    
+}
 #configImg{
     width: 75vw;
     height: 18vw;
+}
+
+#heritImg{
+    width: 42vw;
+    height: 18vw;
+}
+#configurContainer{
+    margin-top: 20vw;
 }
 
 footer {

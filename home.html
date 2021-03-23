@@ -11,6 +11,8 @@
 </head>
 
 <body>
+    <div id="triggerOne"></div>
+    <div id="triggerTwo"></div>
     <header>
         <div id="logo"></div>
         <nav>
@@ -22,7 +24,7 @@
     </header>
     <main>
         <div id="configurContainer" class="container">
-            <section>
+            <section id="textConfig">
                 <h1>F1 Configurator</h1>
                 <p>Text description about the text :
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -41,10 +43,10 @@
             </div>
         </div>
         <div id="heritageContainer" class="container">
-            <div>
-                <img src="">
+            <div id="heritDivImg">
+                <img id="heritImg" src="./images/OldCar.png">
             </div>
-            <section>
+            <section id="textHerit">
                 <h1>Go back in time !</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et
@@ -60,5 +62,7 @@
     </main>
     <footer></footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
 <script src="home.js"></script>
 </html>
