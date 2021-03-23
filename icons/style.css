@@ -1,0 +1,31 @@
+body {
+  background-color: black;
+}
+
+main {
+  color: aliceblue;
+}
+#list ul li {
+  display: inline-block;
+}
+
+ul li {
+  display: inline-block;
+}
+
+section {
+  height: 50vh;
+}
+
+.carScroll {
+  height: 20vw;
+}
+
+#the_div {
+  width: 50vw;
+  filter: drop-shadow(3px 2px 3px #097c7c);
+}
+
+#wheels {
+  rotate: inherit;
+}
