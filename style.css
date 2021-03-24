@@ -19,7 +19,7 @@ ul li {
 }
 
 section {
-  height: 20vh;
+  height: 20vw;
 }
 
 #the_div {
@@ -32,13 +32,18 @@ section {
 }
 
 #section {
-  height: 100vh;
+  height: 100vw;
 }
 
 #line {
   z-index: 10;
   margin-left: 50%;
   margin-right: 50%;
+}
+
+svg {
+  width: 2vw;
+  height: 220vw;
 }
 
 #lines {
@@ -53,7 +58,7 @@ section {
 /* GENERAL */
 p {
   color: black;
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 
 h2 {
@@ -154,12 +159,14 @@ nav {
 #carScroll {
   display: flex;
   align-content: center;
-  height: 350vh;
+  height: 1vw;
   z-index: 20;
+  transform: translate3d(0);
 }
 
 .carScroll {
   height: 10vw;
+  width: 4vw;
   display: fixed;
   margin-left: auto;
   margin-right: auto;
@@ -170,15 +177,23 @@ nav {
   text-align: center;
   font-size: 2em;
 }
+.block h2 {
+  font-size: 2.3vw;
+}
+
+.blockImage {
+  width: auto;
+  height: 20vw;
+}
 
 .blockLeft {
   float: left;
-  width: 500rem;
+  width: 500vw;
 }
 
 .blockRight {
   float: right;
-  width: 100vw;
+  width: 500vw;
 }
 
 #textScroll {
@@ -187,7 +202,7 @@ nav {
 }
 
 .block {
-  width: 30rem;
+  width: 33vw;
   height: auto;
 }
 
@@ -218,7 +233,7 @@ nav {
 /* FOOTER */
 footer {
   position: absolute;
-  top: 600vh;
+  top: 350vw;
   height: 10vw;
   width: 100%;
   background-image: url(./images/footerTexture.jpg);

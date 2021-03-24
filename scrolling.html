@@ -49,51 +49,51 @@
     </div>
     <section class="carLine">
          <div id="line">
-            <svg width="1000" height="3500">
+            <svg>
                 <!-- <path d="M 840 0 l 0 3500" stroke="blue" stroke-width="4" fill="none"/> -->
                 <line  x="0" y1="0" y2="3500" stroke="blue" stroke-width="4"/>
             </svg>
         </div>
-        <div id="lines">
+        <!-- <div id="lines">
             <svg width="1000" height="3500">
                 <line x1="100" x2="100" y="20" stroke="blue" stroke-width="4"/>
             </svg>
-        </div>
+        </div> -->
     </section>
     <section id="textScroll">
         <div class="block block1">
             <h2>TEXT try</h2>
-            <img width="500" src="./ideas/161833121_838877020025757_6262080753658276040_n.jpg" alt="image"/>
+            <img class="blockImage" src="./ideas/161833121_838877020025757_6262080753658276040_n.jpg" alt="image"/>
             <p>Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you?</p>
         </div>
         <div class="blockRight"></div>
         <div class="block block2">
             <h2>TEXT try</h2>
-            <img width="500" src="./ideas/161833121_838877020025757_6262080753658276040_n.jpg" alt="image"/>
+            <img class="blockImage" src="./ideas/161833121_838877020025757_6262080753658276040_n.jpg" alt="image"/>
             <p>Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you?</p>
         </div>
         <div class="blockLeft"></div>
         <div class="block block3">
             <h2>TEXT try</h2>
-            <img width="500" src="./ideas/161833121_838877020025757_6262080753658276040_n.jpg" alt="image"/>
+            <img class="blockImage" src="./ideas/161833121_838877020025757_6262080753658276040_n.jpg" alt="image"/>
             <p>Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you?</p> 
         </div>    
         <div class="blockRight"></div>
         <div class="block block4">
             <h2>TEXT try</h2>
-            <img width="500" src="./ideas/161833121_838877020025757_6262080753658276040_n.jpg" alt="image"/>
+            <img class="blockImage" src="./ideas/161833121_838877020025757_6262080753658276040_n.jpg" alt="image"/>
             <p>Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you?</p>
         </div>
         <div class="blockLeft"></div>
         <div class="block block5">
             <h2>TEXT try</h2>
-            <img width="500" src="./ideas/161833121_838877020025757_6262080753658276040_n.jpg" alt="image"/>
+            <img class="blockImage" src="./ideas/161833121_838877020025757_6262080753658276040_n.jpg" alt="image"/>
             <p>Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you?</p>
         </div>
         <div class="blockRight"></div>
         <div class="block block6">
             <h2>TEXT try</h2>
-            <img width="500" src="./ideas/161833121_838877020025757_6262080753658276040_n.jpg" alt="image"/>
+            <img class="blockImage" src="./ideas/161833121_838877020025757_6262080753658276040_n.jpg" alt="image"/>
             <p>Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you?</p>
         </div>
     </section>
@@ -107,14 +107,14 @@
     <script>
         gsap.registerPlugin(ScrollTrigger);
 
-        gsap.to("#carScroll", {y: "0vh",  scrollTrigger:{trigger:"#carScroll", markers:false, scrub:true, start:"top 40%", end:"bottom 25%", pin:true, toggleActions:"play pause resume reset"}});
+        gsap.to("#carScroll", {y: "240vw", ease:"linear", scrollTrigger:{trigger:"#line", markers:false, scrub:true, start:"top 50%", end:"bottom 70%", pin:false, toggleActions:"play pause resume reset"}});
         // gsap.from("#the_div", {duration: 2, x: "450vw", scrollTrigger:{trigger:"#the_div"}});
         gsap.from(".block1", {x: "-250vw", scrollTrigger:{trigger:"#timeline", markers:false, scrub:true, start:"top 100%", end:"bottom 25", pin:false, toggleActions:"play pause resume reset"}});        
         gsap.from(".block2", {x: "250vw", scrollTrigger:{trigger:".block1" , markers:false, scrub:true, start:"top 50%", end:"bottom 25%", pin:false, toggleActions:"play pause resume reset"}});
         gsap.from(".block3", {x: "-250vw", scrollTrigger:{trigger:".block2", markers:false, scrub:true, start:"top 50%", end:"bottom 25%", pin:false, toggleActions:"play pause resume reset"}});
         gsap.from(".block4", {x: "250vw", scrollTrigger:{trigger:".block3", markers:false, scrub:true, start:"top 50%", end:"bottom 25%", pin:false, toggleActions:"play pause resume reset"}});
-        gsap.from(".block5", {x: "-250vw", scrollTrigger:{trigger:".block4", markers:false, scrub:true, start:"top 50%", end:"bottom 25%", pin:false, toggleActions:"play pause resume reset"}});
-        gsap.from(".block6", {x: "250vw", scrollTrigger:{trigger:".block5", markers:false, scrub:true, start:"top 50%", end:"bottom 25%", pin:false, toggleActions:"play pause resume reset"}});
+        gsap.from(".block5", {x: "-250vw", scrollTrigger:{trigger:".block4", markers:false, scrub:true, start:"top 50%", end:"bottom 40%", pin:false, toggleActions:"play pause resume reset"}});
+        gsap.from(".block6", {x: "250vw", scrollTrigger:{trigger:".block5", markers:true, scrub:true, start:"top 50%", end:"bottom 65%", pin:false, toggleActions:"play pause resume reset"}});
 
 
     </script>
