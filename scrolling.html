@@ -14,25 +14,25 @@
         <div id="logo"></div>
         <nav>
             <a class="navButts" href="home.html"><span>Home</span></a>
-            <a class="navButts"><span>Car</span></a>
-            <a class="navButts"><span>Heritage</span></a>
+            <a class="navButts" href="configurator.html"><span>Car</span></a>
+            <a class="navButts" href="scrolling.html"><span>Heritage</span></a>
         </nav>
     
     </header>
     <main>
-    <div id="the_section2">
+    <!-- <div id="the_section2">
         <div id="the_div"></div>  
-    </div>
-    <div id="container">
+    </div> -->
+    <div id="container" class="container">
         <div id="heritageContainer">
-        <div class="leftSide">
-        <h1>F1 Heritage</h1>
-        <p>Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you?</p>
-        </div>
-        <div class="rightSide">
-            <img width="500" src="./ideas/161833121_838877020025757_6262080753658276040_n.jpg" alt="image"/>
-        </div>   
+            <div class="leftSide">
+                <h1>F1 Heritage</h1>
+                <p>Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you?</p>
+            </div> 
         </div> 
+        <div class="rightSide">
+            <img class="topImage" src="./ideas/161833121_838877020025757_6262080753658276040_n.jpg" alt="image"/>
+        </div>  
     </div>
     <section class="carLine">
         <!-- <div id="line">
@@ -108,7 +108,7 @@
         gsap.registerPlugin(ScrollTrigger);
 
         gsap.to("#carScroll", {y: "0vh",  scrollTrigger:{trigger:"#carScroll", markers:false, scrub:true, start:"top 40%", end:"bottom 25%", pin:true, toggleActions:"play pause resume reset"}});
-        gsap.from("#the_div", {duration: 2, x: "450vw", scrollTrigger:{trigger:"#the_div"}});
+        // gsap.from("#the_div", {duration: 2, x: "450vw", scrollTrigger:{trigger:"#the_div"}});
         gsap.from(".block1", {x: "-250vw", scrollTrigger:{trigger:"#timeline", markers:false, scrub:true, start:"top 100%", end:"bottom 25", pin:false, toggleActions:"play pause resume reset"}});        
         gsap.from(".block2", {x: "250vw", scrollTrigger:{trigger:".block1" , markers:false, scrub:true, start:"top 50%", end:"bottom 25%", pin:false, toggleActions:"play pause resume reset"}});
         gsap.from(".block3", {x: "-250vw", scrollTrigger:{trigger:".block2", markers:false, scrub:true, start:"top 50%", end:"bottom 25%", pin:false, toggleActions:"play pause resume reset"}});

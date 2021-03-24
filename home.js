@@ -26,3 +26,6 @@ gsap.from("#textHerit", { x: "45vw" , scrollTrigger:{
 
     start:"top 70%", 
     end:"top  40%" } });
+
+gsap.to(".carDrive", {duration: 3, x: "140vw", ease: "power3.in",  scrollTrigger:{trigger:".carDrive"}});
+gsap.to("#textTitle", {duration: 3, x: "92vw", ease: "power3.in",  scrollTrigger:{trigger:"#textTitle"}});
