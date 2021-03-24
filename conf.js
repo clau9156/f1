@@ -5,7 +5,11 @@ const features = {
     front_wing: false,
     rear_wing: false,
     halo: false,
-    driver: false
+    driver: false,
+    wet: false,
+    medium: false,
+    soft: false,
+    hard: false,
   };
 
 document.addEventListener("DOMContentLoaded", loadSVG);
@@ -23,6 +27,37 @@ function loadSVG() {
         // TODO: put the SVG into the DOM
         document.querySelector("section").innerHTML = svgData;
         // TODO: Start the animation
+    })
+        
+    fetch("./features/frontWing-01.svg")
+    .then( response => response.text() )
+    .then( svgData => {
+        console.log("SVG loaded");
+
+        // TODO: put the SVG into the DOM
+        document.querySelector("#front_wing").innerHTML = svgData;
+        // TODO: Start the animation
+
+    })
+        fetch("./features/rearWing-01.svg")
+        .then( response => response.text() )
+        .then( svgData => {
+            console.log("SVG loaded");
+    
+            // TODO: put the SVG into the DOM
+            document.querySelector("#rear").innerHTML = svgData;
+            // TODO: Start the animation
+
+        })
+            fetch("./features/halo-01.svg")
+            .then( response => response.text() )
+            .then( svgData => {
+                console.log("SVG loaded");
+        
+                // TODO: put the SVG into the DOM
+                document.querySelector("#halo").innerHTML = svgData;
+                // TODO: Start the animation
+
     startPersonalising();
     })
 }
@@ -52,12 +87,15 @@ function startPersonalising() {
     document.querySelector(".color20").addEventListener("click", clickColor20);
   
   
-    document.querySelector("#upper").addEventListener("click", click)
-    document.querySelector("#lower").addEventListener("click", click)
-    document.querySelector("#front").addEventListener("click", click)
-    document.querySelector("#flip").addEventListener("click", click)
-    document.querySelector("#floor").addEventListener("click", click)
-    document.querySelector("#wheels").addEventListener("click", click)
+    document.querySelector("#upper").addEventListener("click", clickUpper)
+    document.querySelector("#lower").addEventListener("click", clickLower)
+    document.querySelector("#front").addEventListener("click", clickFront)
+    document.querySelector("#flip").addEventListener("click", clickFlip)
+    document.querySelector("#floor").addEventListener("click", clickFloor)
+    document.querySelector("#wheels").addEventListener("click", clickWheels)
+    document.querySelector("#front_wing").addEventListener("click", clickFrontWing)
+    document.querySelector("#rear").addEventListener("click", clickRear)
+    document.querySelector("#halo").addEventListener("click", clickHalo)
 }
 
 function clickColor1() {
@@ -249,6 +287,9 @@ function carListener() {
     document.querySelector("#flip").addEventListener("click", clickFlip);
     document.querySelector("#floor").addEventListener("click", clickFloor);
     document.querySelector("#wheels").addEventListener("click", clickWheels);
+    document.querySelector("#front_wing").addEventListener("click", clickFrontWing)
+    document.querySelector("#rear").addEventListener("click", clickRear)
+    document.querySelector("#halo").addEventListener("click", clickHalo)
 
 }
 
@@ -294,6 +335,51 @@ function clickWheels() {
     startPersonalising();
 }
 
-function toggleOption() {
+function clickFrontWing() {
+    console.log("Click Front Wing");
+    document.querySelector("#frontwing").setAttribute("fill", paint);
+    // console.log(paint);
+    removeEventListeners();
+    startPersonalising();
+}
 
+function clickRear() {
+    console.log("Click Rear Wing");
+    document.querySelector("#rearwing").setAttribute("fill", paint);
+    removeEventListeners();
+    startPersonalising();
+}
+
+function clickHalo() {
+    console.log("Click Halo");
+    document.querySelector("#hallo").setAttribute("fill", paint);
+    console.log(paint);
+    removeEventListeners();
+    startPersonalising();
+}
+
+
+function removeEventListeners() {
+    document.querySelector("#upper").removeEventListener("click", clickUpper);
+    document.querySelector("#lower").removeEventListener("click", clickLower);
+    document.querySelector("#front").removeEventListener("click", clickFront);
+    document.querySelector("#flip").removeEventListener("click", clickFlip);
+    document.querySelector("#floor").removeEventListener("click", clickFloor);
+    document.querySelector("#wheels").removeEventListener("click", clickWheels);
+    document.querySelector("#front_wing").removeEventListener("click", clickFrontWing);
+    document.querySelector("#rear").removeEventListener("click", clickRear);
+    document.querySelector("#halo").removeEventListener("click", clickHalo);
+}
+
+function toggleOption() {
+    const target = event.currentTarget;
+    const feature = target.dataset.feature;
+  
+    // Toggle
+    console.log(features[feature]);
+    if(features[feature]) {
+      features[feature] = false ;
+    } else {
+      features[feature] = true;
+}
 }

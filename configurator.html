@@ -14,21 +14,45 @@
         #Layer_9_Image-2 {
             pointer-events: none;
         }
+
+        #Layer_2_Image {
+            pointer-events: none;
+        }
+
+        #Layer_3_Image {
+            pointer-events: none;
+        }
+
+        #Layer_4_Image {
+            pointer-events: none;
+        }
     </style>
     <header>
         <div id="logo"></div>
         <nav>
             <a class="navButts" href="home.html"><span>Home</span></a>
-            <a class="navButts"><span>Car</span></a>
-            <a class="navButts"><span>Heritage</span></a>
+            <a class="navButts" href="configurator.html"><span>Car</span></a>
+            <a class="navButts" href="scrolling.html"><span>Heritage</span></a>
         </nav>
 
     </header>
     <main>
         <div id="carholder">
-            <section>
+            <section id="car">
                 <!-- CAR GOES HERE -->
             </section>
+            <!-- TYRES -->
+            <img src="./features/wet.png" alt="wet tyres" class="hide wet" data-feature="wet" />
+            <img src="" alt="medium tyres" class="hide medium" data-feature="medium" />
+            <img src="" alt="soft tyres" class="hide soft" data-feature="soft" />
+            <img src="" alt="hard tyres" class="hide hard" data-feature="hard" />
+            <!-- Wings and Halo -->
+            <div id="front_wing"></div>
+            <div id="rear"></div>
+            <div id="halo"></div>
+            <!-- <img src="./features/frontWing-01.svg" alt="front wing" class=" front" data-feature="frontwing" />
+            <img src="./features/rearWing-01.svg" alt="rear wing" class=" rear" data-feature="rearwing" />
+            <img src="./features/halo-01.svg" alt="halo up" class=" halo" data-feature="halo" /> -->
         </div>
         <div id="configurate">
             <h1>Mix and Match your favorite team colors:</h1>

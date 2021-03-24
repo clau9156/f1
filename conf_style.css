@@ -67,6 +67,11 @@ main {
 #carholder {
 width: 80%;
 }
+#car {
+  width: 57vw;
+  height: 20vw;
+  top: 22vw;
+}
 
 #tyres {
     grid-area: tyres;
@@ -159,4 +164,49 @@ p {
    font-size: large; 
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    color: white;
+}
+
+/* TYRES */
+
+.hide {
+    display: none;
+}
+
+.wet {
+    position: absolute;
+    width: 75%;
+    height: auto;
+    top: 15vh;
+    left: -5vw;
+}
+
+/* Parts */
+
+#front_wing {
+  outline-style: solid 2px black;
+ position: absolute;
+    width: 22%;
+    height: 10vw;
+    top: 27.5vw;
+    left: 36.2vw;
+}
+
+#frontwing:hover {
+  outline-style: solid 2px black;
+}
+
+#rear {
+    position: absolute;
+    width: 15%;
+    height: 8vw;
+    top: 17.3vw;
+    left: 1.6vw;
+}
+
+#halo {
+    position: absolute;
+    width: 13%;
+    height: 9vw;
+    top: 21.5vw;
+    left: 24vw;
 }
