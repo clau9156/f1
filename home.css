@@ -140,7 +140,7 @@ nav {
 
 footer {
   position: absolute;
-  top: 350vh;
+  top: 160vw;
   height: 10vw;
   width: 100%;
   background-image: url(./images/footerTexture.jpg);
