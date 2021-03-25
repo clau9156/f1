@@ -7,10 +7,10 @@ function carAnimation() {
     gsap.to("#textTitle", {duration: 3, x: "92vw", ease: "power3.in",  scrollTrigger:{trigger:"#textTitle"}});
     setTimeout(function() {
         document.querySelector("#audio").play();
-        document.querySelector("#audio").volume=0.1;
-        setTimeout(function() {
-            document.querySelector("#audio").pause();
-        },2400);
+        document.querySelector("#audio").volume=0.2;
+        // setTimeout(function() {
+        //     document.querySelector("#audio").pause();
+        // },2400);
     }, 1500);
 }
 
