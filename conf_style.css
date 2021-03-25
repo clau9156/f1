@@ -180,6 +180,39 @@ main {
     width: 4vw;
     height: auto;
   }
+  
+  #teams {
+    grid-area: tyres;
+    box-shadow: 3px 3px 8px #ddd;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  #teams .option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #aaa;
+    margin-left: 0.3vw;
+    margin-right: 1.7vw;
+  }
+
+  #teams .option:hover {
+    filter: drop-shadow(0 0 0.75rem white);
+    cursor: pointer;
+  }
+  
+  #teams .option.chosen {
+    text-decoration: underline;
+    color: #000;
+  }
+  
+  #teams .option img {
+    width: 4vw;
+    height: auto;
+  }
 
 footer {
   position: absolute;
@@ -203,6 +236,10 @@ p {
   color: white;
 }
 
+
+span {
+  font-family: "Racing Sans One", cursive;
+}
 /* TYRES */
 
 .hide {
@@ -211,10 +248,37 @@ p {
 
 .wet {
   position: absolute;
-  width: 75%;
-  height: auto;
-  top: 15vh;
-  left: -5vw;
+  width: 50.5%;
+  height: 14vw;
+  top: 25.1vw;
+  left: 1.6vw;
+}
+
+.medium {
+  position: absolute;
+  width: 50.5%;
+  height: 14vw;
+  top: 25.1vw;
+  left: 1.6vw;
+
+}
+
+.soft {
+  position: absolute;
+  width: 50.5%;
+  height: 14vw;
+  top: 25.1vw;
+  left: 1.6vw;
+
+}
+
+.hard {
+  position: absolute;
+  width: 50.5%;
+  height: 14vw;
+  top: 25.1vw;
+  left: 1.6vw;
+
 }
 
 /* Parts/FEATURES */
@@ -309,3 +373,22 @@ p {
   left: 4.5vw;
   transform: rotate(3deg);
 }
+/* Teams */
+
+.amcogni {
+  position: absolute;
+  width: 55%;
+  height: 23vw;
+  top: 19vw;
+  left: 3vw;
+}
+/* Drivers */
+
+.slides {
+  position: absolute;
+  height: 30vw;
+  left: 27vw;
+  z-index: -10;
+}
+
+/* Teams */

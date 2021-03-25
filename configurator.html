@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
     <title>Configurator Page</title>
     <link rel="stylesheet" href="conf_style.css">
 </head>
@@ -38,33 +39,49 @@
     </header>
     <main>
         <div id="carholder">
+            <!-- Drivers -->
+            <div class="w3-content w3-display-container">
+                <img class="slides" src="">
+                <img class="slides" src="./features/verstappen.png">
+                <img class="slides" src="./features/sebAM.png">
+                <img class="slides" src="./features/kimi.png">
+                <img class="slides" src="./features/lewis.png">
+                <img class="slides" src="./features/daniel.png">
+                <img class="slides" src="./features/gasly.png">
+
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                <h1>Drivers</h1>
+            </div>
             <section id="car">
                 <!-- CAR GOES HERE -->
             </section>
             <!-- TYRES -->
-            <img src="./features/wet.png" alt="wet tyres" class="hide wet" data-feature="wet" />
-            <img src="" alt="medium tyres" class="hide medium" data-feature="medium" />
-            <img src="" alt="soft tyres" class="hide soft" data-feature="soft" />
-            <img src="" alt="hard tyres" class="hide hard" data-feature="hard" />
+            <img src="./features/wett.png" alt="wet tyres" class="hide wet" data-feature="wet" />
+            <img src="./features/medium.png" alt="medium tyres" class="hide medium" data-feature="medium" />
+            <img src="./features/soft.png" alt="soft tyres" class="hide soft" data-feature="soft" />
+            <img src="./features/hard.png" alt="hard tyres" class="hide hard" data-feature="hard" />
             <!-- Wings and Halo -->
             <div id="front_wing" class="hide" data-feature="wing1"></div>
             <div id="rear" class="hide" data-feature="wing2"></div>
             <div id="halo" class="hide" data-feature="halo"></div>
-            <!-- <img src="./features/frontWing-01.svg" alt="front wing" class=" front" data-feature="frontwing" />
-            <img src="./features/rearWing-01.svg" alt="rear wing" class=" rear" data-feature="rearwing" />
-            <img src="./features/halo-01.svg" alt="halo up" class=" halo" data-feature="halo" /> -->
+            <!-- Title Sponsors -->
             <img src="./features/redb.png" alt="wet tyres" class="hide redbul" data-feature="redbul" />
             <img src="./features/alpine.png" alt="wet tyres" class="hide alpine" data-feature="alpine" />
             <img src="./features/cogni.png" alt="wet tyres" class="hide cogni" data-feature="cogni" />
             <img src="./features/Mission.png" alt="wet tyres" class="hide mission" data-feature="mission" />
             <img src="./features/dell.png" alt="wet tyres" class="hide dell" data-feature="dell" />
             <img src="./features/honda.png" alt="wet tyres" class="hide honda" data-feature="honda" />
+            <!-- Teams Logos -->
+            <img src="./features/redbrace.png" alt="wet tyres" class="hide amcogni" data-feature="rbracing" />
+            <img src="./features/astonm.png" alt="wet tyres" class="hide amcogni" data-feature="amcogni" />
+            <img src="./features/ferrari.png" alt="wet tyres" class="hide amcogni" data-feature="ferrari" />
+            <img src="./features/mclaren.png" alt="wet tyres" class="hide amcogni" data-feature="mclaren" />
         </div>
         <div id="configurate">
             <h1>Mix and Match your favorite team colors:</h1>
             <div id="colorbox">
                 <div id="firstteams">
-                    <p>Mercedes Petronas</p>
                     <svg id="merc" viewBoX="0 0 70 10">
                         <circle class="color1" cx="5" cy="5" r="4" stroke="black" stroke-width="0.3px" fill="#02DEDC" />
                         <circle class="color2" cx="15" cy="5" r="4" stroke="black" stroke-width="0.3px"
@@ -74,7 +91,6 @@
                         <circle class="color4" cx="35" cy="5" r="4" stroke="black" stroke-width="0.3px"
                             fill="#A60303" />
                     </svg>
-                    <p>Red Bull Racing</p>
                     <svg id="redbull" viewBoX="0 0 70 10">
                         <circle class="color5" cx="5" cy="5" r="4" stroke="black" stroke-width="0.3px" fill="#FFED4B" />
                         <circle class="color6" cx="15" cy="5" r="4" stroke="black" stroke-width="0.3px"
@@ -84,7 +100,6 @@
                     </svg>
                 </div>
                 <div id="secondteams">
-                    <p>Aston Martin</p>
                     <svg id="aston" viewBoX="0 0 70 10">
                         <circle class="color8" cx="5" cy="5" r="4" stroke="black" stroke-width="0.3px" fill="#003B39" />
                         <circle class="color9" cx="15" cy="5" r="4" stroke="black" stroke-width="0.3px"
@@ -92,7 +107,6 @@
                         <circle class="color10" cx="25" cy="5" r="4" stroke="black" stroke-width="0.3px"
                             fill="#BF0B5F" />
                     </svg>
-                    <p>Scuderia Ferrari/Alfa Romeo</p>
                     <svg id="ferrari" viewBoX="0 0 70 10">
                         <circle class="color11" cx="5" cy="5" r="4" stroke="black" stroke-width="0.3px"
                             fill="#FF2800" />
@@ -105,14 +119,12 @@
                     </svg>
                 </div>
                 <div id="thirdteams">
-                    <p>McLaren</p>
                     <svg id="mclaren" viewBoX="0 0 70 10">
                         <circle class="color15" cx="5" cy="5" r="4" stroke="black" stroke-width="0.3px"
                             fill="#FC8814" />
                         <circle class="color16" cx="15" cy="5" r="4" stroke="black" stroke-width="0.3px"
                             fill="#0665FF" />
                     </svg>
-                    <p>Alpine/Williams/Alpha Tauri</p>
                     <svg id="mix" viewBoX="0 0 70 10">
                         <circle class="color17" cx="5" cy="5" r="4" stroke="black" stroke-width="0.3px"
                             fill="#003286" />
@@ -164,7 +176,7 @@
             <h1>Title sponsor:</h1>
             <div id="sponsors">
                 <figure class="option" data-feature="redbul">
-                    <img src="./logos/red_bull-logo.png" alt="redbull" />
+                    <img src="./icons/redbull.png" alt="redbull" />
 
                 </figure>
                 <figure class="option" data-feature="cogni">
@@ -185,6 +197,34 @@
                 </figure>
                 <figure class="option delltech" data-feature="dell">
                     <img src="./icons/Dell_Logo.png" alt="dell" />
+
+                </figure>
+                </figure>
+            </div>
+            <h1>Teams:</h1>
+            <div id="teams">
+                <figure class="option" data-feature="rbracing">
+                    <img src="./icons/reddull.png" alt="redbull" />
+
+                </figure>
+                <figure class="option" data-feature="amcogni">
+                    <img src="./icons/aston.png" alt="cogni" />
+
+                </figure>
+                <figure class="option" data-feature="ferrari">
+                    <img src="./icons/ferrari.PNG" alt="honda" />
+
+                </figure>
+                <figure class="option" data-feature="mclaren">
+                    <img src="./icons/mcl.PNG" alt="alpine" />
+
+                </figure>
+                <figure class="option" data-feature="alpine">
+                    <img src="./icons/alpine.png" alt="mission" />
+
+                </figure>
+                <figure class="option" data-feature="mercedes">
+                    <img src="./icons/merc.PNG" alt="dell" />
 
                 </figure>
                 </figure>
