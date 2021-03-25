@@ -1,10 +1,10 @@
 body {
   color: black;
   margin: 0;
-  background-color: #a8a9ad;
+  background-color: rgb(219, 219, 219);
   background-image: url(./images/background.png);
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: cover;
   font-family: "Racing Sans One", cursive;
   overflow-x: hidden;
 }
@@ -22,11 +22,12 @@ h3 {
 header {
   display: flex;
   flex-direction: row;
+  background-color: darkred;
 }
 nav {
   display: flex;
   align-items: center;
-  height: 13vw;
+  height: 5vw;
   margin-left: 20vw;
 }
 
@@ -49,10 +50,10 @@ nav {
 }
 
 #logo {
-  margin: 2vw 0 0 4vw;
-  width: 8vw;
-  height: 8vw;
-  background-image: url(./images/logo.png);
+  margin: 1vw 0 0 4vw;
+  width: 9vw;
+  height: 3vw;
+  background-image: url(./logocar.png);
   background-size: cover;
 }
 /*MAIN MAIN  MAIN MAIN MAIN MAIN  MAIN MAIN MAIN MAIN  MAIN MAIN MAIN MAIN */
