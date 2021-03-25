@@ -40,8 +40,9 @@
     <main>
         <div id="top_info">
             <h1>Formula One Car Configurator</h1>
-            <p>gSDGui
-                hgiwhgwuihighvsduhsdoughslbsjvsughslhlahbvjvbajksbcaslkrhq;oriqwh;eoihvdovck;jvnakfnadk;fhasoirqhewroiufasjvbnakjsfbasfhaurh;oauvbsa;kjs
+            <p>gSDGui 
+                hgiwhgwuihighvsduhsdoughslbsjvsughslhlahbvjvbajksbcas lkrhq;oriqwh;eoihvdovck;jvnakfnadk;fhasoirqhewroiufasj vbnakjsfb
+                asfhaurh;oauvbsa;kjs
             </p>
         </div>
         <div id="contentholder">
@@ -50,7 +51,7 @@
                     <!-- CAR GOES HERE -->
                 </section>
                 <!-- Drivers -->
-                <div class="w3-content w3-display-container">
+                <div class="w3-content w3-display-container driverContainer">
                     <img class="slides" src="">
                     <img class="slides verstappen" src="./features/verstappen.png">
                     <img class="slides seb" src="./features/sebAM.png">
@@ -59,30 +60,36 @@
                     <img class="slides daniel" src="./features/daniel.png">
                     <img class="slides gasly" src="./features/gasly.png">
 
-                    <button class="arrow" onclick="plusDivs(-1)">&#10094;</button>
+                </div>
+                <div class="driverArrows">
+                    <div>
+                        <button class="arrow" onclick="plusDivs(-1)">&#10094;</button>
                     <button class="arrow1" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
                     <div id="drivers">
                         <h1>Choose you driver</h1>
                     </div>
                 </div>
                 <!-- TYRES -->
+                <div id="tyresHolder">
                 <img src="./features/wett.png" alt="wet tyres" class="hide tyre" data-feature="wet" />
                 <img src="./features/medium.png" alt="medium tyres" class="hide tyre" data-feature="medium" />
                 <img src="./features/soft.png" alt="soft tyres" class="hide tyre" data-feature="soft" />
                 <img src="./features/hard.png" alt="hard tyres" class="hide tyre" data-feature="hard" />
+                </div>
                 <!-- Wings and Halo -->
                 <div id="front_wing" class="hide" data-feature="wing1"></div>
                 <div id="rear" class="hide" data-feature="wing2"></div>
                 <div id="halo" class="hide" data-feature="halo"></div>
                 <!-- Title Sponsors -->
-                <img src="./features/redb.png" alt="wet tyres" class="hide redbul" data-feature="redbul" />
-                <img src="./features/alpine.png" alt="wet tyres" class="hide alpine" data-feature="alpine" />
-                <img src="./features/cogni.png" alt="wet tyres" class="hide cogni" data-feature="cogni" />
-                <img src="./features/Mission.png" alt="wet tyres" class="hide mission" data-feature="mission" />
-                <img src="./features/dell.png" alt="wet tyres" class="hide dell" data-feature="dell" />
-                <img src="./features/honda.png" alt="wet tyres" class="hide honda" data-feature="honda" />
+                <img src="./features/redb.png" alt="wet tyres" class="hide redbul sponsorsDis" data-feature="redbul" />
+                <img src="./features/alpine.png" alt="wet tyres" class="hide alpine sponsorsDis" data-feature="alpine" />
+                <img src="./features/cogni.png" alt="wet tyres" class="hide cogni sponsorsDis" data-feature="cogni" />
+                <img src="./features/Mission.png" alt="wet tyres" class="hide mission sponsorsDis" data-feature="mission" />
+                <img src="./features/dell.png" alt="wet tyres" class="hide dell sponsorsDis" data-feature="dell" />
+                <img src="./features/honda.png" alt="wet tyres" class="hide honda sponsorsDis" data-feature="honda" />
                 <!-- Teams Logos -->
-                <img src="./features/redbrace.png" alt="wet tyres" class="hide amcogni" data-feature="rbracing" />
+                <img src="./features/redbrace.png" alt="wet tyres" class="hide amcogni " data-feature="rbracing" />
                 <img src="./features/astonm.png" alt="wet tyres" class="hide amcogni" data-feature="amcogni" />
                 <img src="./features/ferrari.png" alt="wet tyres" class="hide amcogni" data-feature="ferrari" />
                 <img src="./features/mclaren.png" alt="wet tyres" class="hide amcogni" data-feature="mclaren" />
@@ -91,60 +98,60 @@
                 <h1>Mix and Match your favorite team colors:</h1>
                 <div id="colorbox">
                     <div id="firstteams">
-                        <svg id="merc" viewBoX="0 0 70 10">
-                            <circle class="color1" cx="5" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                        <svg id="merc">
+                            <circle class="color1 color" cx="0.5vw" cy="0.5vw" r="0.4vw" stroke="black" stroke-width="0.1vw"
                                 fill="#02DEDC" />
-                            <circle class="color2" cx="15" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            <circle class="color2 color" cx="1.5vw" cy="0.5vw" r="0.4vw" stroke="black" stroke-width="0.1vw"
                                 fill="#A6A8A7" />
-                            <circle class="color3" cx="25" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            <circle class="color3 color" cx="2.5vw" cy="0.5vw" r="0.4vw" stroke="black" stroke-width="0.1vw"
                                 fill="#1E1E1E" />
-                            <circle class="color4" cx="35" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            <circle class="color4 color" cx="3.5vw" cy="0.5vw" r="0.4vw" stroke="black" stroke-width="0.1vw"
                                 fill="#A60303" />
                         </svg>
-                        <svg id="redbull" viewBoX="0 0 70 10">
-                            <circle class="color5" cx="5" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                        <svg id="redbull">
+                            <circle class="color5 color" cx="0.5vw" cy="0.5vw" r="0.4vw" stroke="black" stroke-width="0.1vw"
                                 fill="#FFED4B" />
-                            <circle class="color6" cx="15" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            <circle class="color6 color" cx="1.5vw" cy="0.5vw" r="0.4vw" stroke="black" stroke-width="0.1vw"
                                 fill="#FD1010" />
-                            <circle class="color7" cx="25" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            <circle class="color7 color" cx="2.5vw" cy="0.5vw" r="0.4vw" stroke=" black" stroke-width="0.1vw"
                                 fill="#1B212F" />
                         </svg>
                     </div>
                     <div id="secondteams">
-                        <svg id="aston" viewBoX="0 0 70 10">
-                            <circle class="color8" cx="5" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                        <svg id="aston">
+                            <circle class="color8 color" cx="0.5vw" cy="0.5vw" r="0.4vw" stroke="black" stroke-width="0.1vw"
                                 fill="#003B39" />
-                            <circle class="color9" cx="15" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            <circle class="color9 color" cx="1.5vw" cy="0.5vw" r="0.4vw" stroke="black" stroke-width="0.1vw"
                                 fill="#009CA1" />
-                            <circle class="color10" cx="25" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            <circle class="color10 color" cx="2.5vw" cy="0.5vw" r="0.4vw" stroke="black" stroke-width="0.1vw"
                                 fill="#BF0B5F" />
                         </svg>
-                        <svg id="ferrari" viewBoX="0 0 70 10">
-                            <circle class="color11" cx="5" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                        <svg id="ferrari">
+                            <circle class="color11 color" cx="0.5vw" cy="0.5vw" r="0.4vw" stroke="black" stroke-width="0.1vw"
                                 fill="#FF2800" />
-                            <circle class="color12" cx="15" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            <circle class="color12 color" cx="1.5vw" cy="0.5vw" r="0.4vw" stroke="black" stroke-width="0.1vw"
                                 fill="#570B1F" />
-                            <circle class="color13" cx="25" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            <circle class="color13 color" cx="2.5vw" cy="0.5vw" r="0.4vw" stroke="black" stroke-width="0.1vw"
                                 fill="#E4EBF2" />
-                            <circle class="color14" cx="35" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            <circle class="color14 color" cx="3.5vw" cy="0.5vw" r="0.4vw" stroke="black" stroke-width="0.1vw"
                                 fill="#47080B" />
                         </svg>
                     </div>
                     <div id="thirdteams">
-                        <svg id="mclaren" viewBoX="0 0 70 10">
-                            <circle class="color15" cx="5" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                        <svg id="mclaren">
+                            <circle class="color15 color" cx="0.5vw" cy="0.5vw" r="0.4vw" stroke="black" stroke-width="0.1vw"
                                 fill="#FC8814" />
-                            <circle class="color16" cx="15" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            <circle class="color16 color" cx="1.5vw" cy="0.5vw" r="0.4vw" stroke="black" stroke-width="0.1vw"
                                 fill="#0665FF" />
                         </svg>
-                        <svg id="mix" viewBoX="0 0 70 10">
-                            <circle class="color17" cx="5" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                        <svg id="mix">
+                            <circle class="color17 color" cx="0.5vw" cy="0.5vw" r="0.4vw" stroke="black" stroke-width="0.1vw"
                                 fill="#003286" />
-                            <circle class="color18" cx="15" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            <circle class="color18 color" cx="1.5vw" cy="0.5vw" r="0.4vw" stroke="black" stroke-width="0.1vw"
                                 fill="#01D4FD" />
-                            <circle class="color19" cx="25" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            <circle class="color19 color" cx="2.5vw" cy="0.5vw" r="0.4vw" stroke="black" stroke-width="0.1vw"
                                 fill="#FFFFFF" />
-                            <circle class="color20" cx="35" cy="5" r="4" stroke="black" stroke-width="0.3px"
+                            <circle class="color20 color" cx="3.5vw" cy="0.5vw" r="0.4vw" stroke="black" stroke-width="0.1vw"
                                 fill="black" />
 
                         </svg>

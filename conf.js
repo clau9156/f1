@@ -376,6 +376,7 @@ function removeEventListeners() {
 // TOGGLE FEATURES
 
 function toggleOption(event) {
+    let tyres = false ;
     const target = event.currentTarget;
     const feature = target.dataset.feature;
   
@@ -387,21 +388,113 @@ function toggleOption(event) {
       features[feature] = true;
     }
 
+
+    console.log(target)
+    if (feature ===  "medium" ) {
+
+        appear(feature , target);
+        features.wet =  false;
+        features.soft =  false;
+        features.hard = false;
+        document.querySelector(`#carholder [data-feature = wet]`).classList.add("hide");
+        document.querySelector(`#carholder [data-feature = soft]`).classList.add("hide");
+        document.querySelector(`#carholder [data-feature = hard]`).classList.add("hide");
+        if(tyres == true || features[feature] ==  false ) {
+            features[feature] = false ;
+            disappear(feature, target);
+            tyres =false;
+        }  else {
+            tyres =true;
+        }
+        console.log(features[feature]);
+        console.log(tyres);
+    } else if (feature  ===  "wet" ) {
+
+        appear(feature , target);
+        features.medium =  false;
+        features.soft =  false;
+        features.hard = false;
+        document.querySelector(`#carholder [data-feature = medium]`).classList.add("hide");
+        document.querySelector(`#carholder [data-feature = soft]`).classList.add("hide");
+        document.querySelector(`#carholder [data-feature = hard]`).classList.add("hide");
+        console.log(features.wet);
+        
+        if(tyres == true || features[feature] ==  false) {
+            features[feature] = false ;
+            disappear(feature, target);
+            tyres = false;
+        }  else {
+            tyres = true;
+        }
+        console.log(tyres);
+    }  else if (feature === "soft") {
+        
+        appear(feature , target);
+        features.wet =  false;
+        features.medium =  false;
+        features.hard = false;
+        document.querySelector(`#carholder [data-feature = wet]`).classList.add("hide");
+        document.querySelector(`#carholder [data-feature = medium]`).classList.add("hide");
+        document.querySelector(`#carholder [data-feature = hard]`).classList.add("hide");
+        console.log(features.soft);
+        console.log(tyres);
+        if(tyres == true || features[feature] ==  false) {
+            features[feature] = false ;
+            disappear(feature, target);
+            tyres = false;
+        }  else {
+            tyres = true;
+        }
+        console.log(tyres);
+    } else if (feature === "hard")  {
+
+        appear(feature , target);
+        features.wet =  false;
+        features.soft =  false;
+        features.medium = false;
+        document.querySelector(`#carholder [data-feature = wet]`).classList.add("hide");
+        document.querySelector(`#carholder [data-feature = soft]`).classList.add("hide");
+        document.querySelector(`#carholder [data-feature = medium]`).classList.add("hide");
+        console.log(features.hard);
+        if(tyres == true || features[feature] ==  false) {
+            features[feature] = false ;
+            disappear(feature, target);
+            tyres = false;
+        }  else {
+            tyres = true;
+        }
+        console.log(tyres);
+    }
+    /*wet: false,
+    medium: false,
+    soft: false,
+    hard: false*/
   
-    if (features[feature]) {
+    else if (features[feature]) {
       // feature added
-      console.log(`Feature ${feature} is turned on!`);
-      document.querySelector(`#carholder [data-feature = ${feature}]`).classList.remove("hide");
-      target.classList.add("chosen");
+      
+      
+    appear(feature , target);
 
     } else {
       // feature removed
-      console.log(`Feature ${feature} is turned off!`);
-      document.querySelector(`#carholder [data-feature = ${feature}]`).classList.add("hide");
-      target.classList.remove("chosen");
+     disappear(feature, target);
 
     }
   }
+
+function appear (feature ,target) {
+    console.log(`Feature ${feature} is turned on!`);
+    document.querySelector(`#carholder [data-feature = ${feature}]`).classList.remove("hide");
+    target.classList.add("chosen");
+    
+}
+
+function disappear (feature,target) {
+    console.log(`Feature ${feature} is turned off!`);
+    document.querySelector(`#carholder [data-feature = ${feature}]`).classList.add("hide");
+    target.classList.remove("chosen");
+}
 // DRIVERS FUNCTION
   var slideIndex = 1;
   showDivs(slideIndex);
