@@ -60,6 +60,7 @@ nav {
 .carDrive {
   height: 10vw;
   display: fixed;
+  margin-top: 9vw;
   margin-left: -40vw;
   margin-right: auto;
 }
