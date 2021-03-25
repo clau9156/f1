@@ -55,6 +55,13 @@ main {
     flex-direction: row;
 }
 
+.hover:hover {
+  cursor: pointer;
+  stroke: black;
+  stroke-width: 2;
+}
+
+
 #colorbox {
    display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -73,11 +80,15 @@ width: 80%;
   top: 22vw;
 }
 
+.outline {
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.15rem black);
+}
+
 #tyres {
     grid-area: tyres;
     box-shadow: 3px 3px 8px #ddd;
     border-radius: 1em;
-    padding: 1em;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -101,7 +112,7 @@ width: 80%;
   }
   
   #tyres .option img {
-    width: 5vw;
+    width: 4vw;
     height: auto;
   }
   
@@ -114,7 +125,6 @@ width: 80%;
     grid-area: tyres;
     box-shadow: 3px 3px 8px #ddd;
     border-radius: 1em;
-    padding: 1em;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -142,7 +152,38 @@ width: 80%;
     height: auto;
   }
   
+  #sponsors {
+    grid-area: tyres;
+    box-shadow: 3px 3px 8px #ddd;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  #sponsors .option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #aaa;
+    margin-left: 0.3vw;
+    margin-right: 1.7vw;
+  }
 
+  #sponsors .option:hover {
+    filter: drop-shadow(0 0 0.75rem white);
+    cursor: pointer;
+  }
+  
+  #sponsors .option.chosen {
+    text-decoration: underline;
+    color: #000;
+  }
+  
+  #sponsors .option img {
+    width: 4vw;
+    height: auto;
+  }
 
 footer {
     position: absolute;
@@ -180,7 +221,7 @@ p {
     left: -5vw;
 }
 
-/* Parts */
+/* Parts/FEATURES */
 
 #front_wing {
   outline-style: solid 2px black;
@@ -193,6 +234,14 @@ p {
 
 #frontwing:hover {
   outline-style: solid 2px black;
+}
+
+.redbul {
+  position: absolute;
+  width: 70%;
+  height: 35vw;
+  top: 10vw;
+  left: -5vw;
 }
 
 #rear {
@@ -209,4 +258,57 @@ p {
     height: 9vw;
     top: 21.5vw;
     left: 24vw;
+}
+
+/* Sponsors */
+
+.redbul {
+  position: absolute;
+  width: 8%;
+  height: 3vw;
+  top: 17.8vw;
+  left: 4.5vw;
+}
+
+.alpine {
+  position: absolute;
+  width: 8%;
+  height: 3vw;
+  top: 17.8vw;
+  left: 4.5vw;
+}
+
+.cogni {
+  position: absolute;
+  width: 8%;
+  height: 3vw;
+  top: 17.8vw;
+  left: 4.5vw;
+}
+
+.mission {
+  position: absolute;
+  width: 8%;
+  height: 3vw;
+  top: 17.8vw;
+  left: 4.5vw;
+}
+
+.dell {
+  position: absolute;
+  width: 8%;
+  height: 3vw;
+  top: 18vw;
+  left: 4.5vw;
+  transform: rotate(5deg);
+}
+
+
+.honda {
+  position: absolute;
+  width: 8%;
+  height: 3vw;
+  top: 17.9vw;
+  left: 4.5vw;
+  transform: rotate(3deg);
 }

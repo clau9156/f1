@@ -2,14 +2,14 @@
 
 // The model of all features
 const features = {
-    front_wing: false,
-    rear_wing: false,
+    wing1: false,
+    wing2: false,
     halo: false,
     driver: false,
     wet: false,
     medium: false,
     soft: false,
-    hard: false,
+    hard: false
   };
 
 document.addEventListener("DOMContentLoaded", loadSVG);
@@ -87,15 +87,15 @@ function startPersonalising() {
     document.querySelector(".color20").addEventListener("click", clickColor20);
   
   
-    document.querySelector("#upper").addEventListener("click", clickUpper)
-    document.querySelector("#lower").addEventListener("click", clickLower)
-    document.querySelector("#front").addEventListener("click", clickFront)
-    document.querySelector("#flip").addEventListener("click", clickFlip)
-    document.querySelector("#floor").addEventListener("click", clickFloor)
-    document.querySelector("#wheels").addEventListener("click", clickWheels)
-    document.querySelector("#front_wing").addEventListener("click", clickFrontWing)
-    document.querySelector("#rear").addEventListener("click", clickRear)
-    document.querySelector("#halo").addEventListener("click", clickHalo)
+    document.querySelector("#upper").classList.add("hover");
+    document.querySelector("#lower").classList.add("hover");
+    document.querySelector("#front").classList.add("hover");
+    document.querySelector("#flip").classList.add("hover");
+    document.querySelector("#floor").classList.add("hover");
+    document.querySelector("#wheels").classList.add("hover");
+    document.querySelector("#front_wing").classList.add("hover");
+    document.querySelector("#rear").classList.add("hover");
+    document.querySelector("#halo").classList.add("hover");
 }
 
 function clickColor1() {
@@ -371,7 +371,7 @@ function removeEventListeners() {
     document.querySelector("#halo").removeEventListener("click", clickHalo);
 }
 
-function toggleOption() {
+function toggleOption(event) {
     const target = event.currentTarget;
     const feature = target.dataset.feature;
   
@@ -381,5 +381,23 @@ function toggleOption() {
       features[feature] = false ;
     } else {
       features[feature] = true;
-}
-}
+    }
+
+  
+    if (features[feature]) {
+      // feature added
+      console.log(`Feature ${feature} is turned on!`);
+      document.querySelector(`#carholder [data-feature = ${feature}]`).classList.remove("hide");
+      target.classList.add("chosen");
+
+    } else {
+      // feature removed
+      console.log(`Feature ${feature} is turned off!`);
+      document.querySelector(`#carholder [data-feature = ${feature}]`).classList.add("hide");
+      target.classList.remove("chosen");
+
+    }
+  }
+
+  
+

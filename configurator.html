@@ -47,12 +47,18 @@
             <img src="" alt="soft tyres" class="hide soft" data-feature="soft" />
             <img src="" alt="hard tyres" class="hide hard" data-feature="hard" />
             <!-- Wings and Halo -->
-            <div id="front_wing"></div>
-            <div id="rear"></div>
-            <div id="halo"></div>
+            <div id="front_wing" class="hide" data-feature="wing1"></div>
+            <div id="rear" class="hide" data-feature="wing2"></div>
+            <div id="halo" class="hide" data-feature="halo"></div>
             <!-- <img src="./features/frontWing-01.svg" alt="front wing" class=" front" data-feature="frontwing" />
             <img src="./features/rearWing-01.svg" alt="rear wing" class=" rear" data-feature="rearwing" />
             <img src="./features/halo-01.svg" alt="halo up" class=" halo" data-feature="halo" /> -->
+            <img src="./features/redb.png" alt="wet tyres" class="hide redbul" data-feature="redbul" />
+            <img src="./features/alpine.png" alt="wet tyres" class="hide alpine" data-feature="alpine" />
+            <img src="./features/cogni.png" alt="wet tyres" class="hide cogni" data-feature="cogni" />
+            <img src="./features/Mission.png" alt="wet tyres" class="hide mission" data-feature="mission" />
+            <img src="./features/dell.png" alt="wet tyres" class="hide dell" data-feature="dell" />
+            <img src="./features/honda.png" alt="wet tyres" class="hide honda" data-feature="honda" />
         </div>
         <div id="configurate">
             <h1>Mix and Match your favorite team colors:</h1>
@@ -121,16 +127,16 @@
             </div>
             <h1>Complete the look:</h1>
             <div id="extra_parts">
-                <figure class="option" data-feature="frontwing">
-                    <img src="./icons/frontwing1.png" alt="frontwing" />
+                <figure class="option" data-feature="wing1">
+                    <img src="./icons/frontwing1.png" alt="wing1" />
 
                 </figure>
-                <figure class="option" data-feature="rearwing">
-                    <img src="./icons/rearwing.png" alt="rearwing" />
+                <figure class="option" data-feature="wing2">
+                    <img src="./icons/rearwing.png" alt="wing2" />
 
                 </figure>
                 <figure class="option" data-feature="halo">
-                    <img src="./icons/halo.png" alt="halo" />
+                    <img src="./icons/halo.png" alt="haloup" />
 
                 </figure>
 
@@ -155,13 +161,43 @@
                 </figure>
                 </figure>
             </div>
+            <h1>Title sponsor:</h1>
+            <div id="sponsors">
+                <figure class="option" data-feature="redbul">
+                    <img src="./logos/red_bull-logo.png" alt="redbull" />
+
+                </figure>
+                <figure class="option" data-feature="cogni">
+                    <img src="./icons/Cognizant.png" alt="cogni" />
+
+                </figure>
+                <figure class="option" data-feature="honda">
+                    <img src="./icons/honda.png" alt="honda" />
+
+                </figure>
+                <figure class="option" data-feature="alpine">
+                    <img src="./icons/alpine.png" alt="alpine" />
+
+                </figure>
+                <figure class="option" data-feature="mission">
+                    <img src="./icons/mission.png" alt="mission" />
+
+                </figure>
+                <figure class="option delltech" data-feature="dell">
+                    <img src="./icons/Dell_Logo.png" alt="dell" />
+
+                </figure>
+                </figure>
+            </div>
         </div>
         </div>
-        <!-- <li>TIERS</li>
-        <ul class="tiers">
-            <li></li>
-        </ul> -->
+        <div id="selected">
+            <ul>
+                <!-- featureElements are added here! -->
+            </ul>
         </div>
+        </div>
+
     </main>
     <footer></footer>
     <script src="conf.js"></script>
