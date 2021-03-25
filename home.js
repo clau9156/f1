@@ -1,3 +1,16 @@
+"use strict";
+
+window.addEventListener("DOMContentLoaded", carAnimation);
+
+function carAnimation() {
+    gsap.to(".carDrive", {duration: 3, x: "140vw", ease: "power3.in",  scrollTrigger:{trigger:".carDrive"}});
+    gsap.to("#textTitle", {duration: 3, x: "92vw", ease: "power3.in",  scrollTrigger:{trigger:"#textTitle"}});
+    setTimeout(function() {
+        document.querySelector("#audio").play();
+    }, 1500);
+}
+
+
 gsap.registerPlugin(ScrollTrigger);
 gsap.from("#configDivImg", { x: "-45vw" , scrollTrigger:{
     trigger:"#triggerOne",
@@ -26,3 +39,5 @@ gsap.from("#textHerit", { x: "45vw" , scrollTrigger:{
 
     start:"top 70%", 
     end:"top  40%" } });
+
+

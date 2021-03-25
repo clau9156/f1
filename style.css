@@ -7,9 +7,9 @@ body {
   overflow-x: hidden;
 }
 
-main {
+/* main {
   color: aliceblue;
-}
+} */
 #list ul li {
   display: inline-block;
 }
@@ -19,21 +19,7 @@ ul li {
 }
 
 section {
-  height: 20vh;
-}
-
-#carScroll {
-  display: flex;
-  align-content: center;
-  height: 350vh;
-  z-index: 20;
-}
-
-.carScroll {
-  height: 10vw;
-  display: fixed;
-  margin-left: auto;
-  margin-right: auto;
+  height: 20vw;
 }
 
 #the_div {
@@ -46,7 +32,7 @@ section {
 }
 
 #section {
-  height: 100vh;
+  height: 100vw;
 }
 
 #line {
@@ -55,26 +41,94 @@ section {
   margin-right: 50%;
 }
 
+svg {
+  width: 2vw;
+  height: 220vw;
+}
+
 #lines {
   z-index: 11;
 }
 
-.block {
-  width: 30rem;
-  height: auto;
+/* GENERAL */
+p {
+  color: black;
+  font-size: 1.2vw;
 }
-.block > img {
-  /* width: 30rem;
-  height: auto; */
+
+h2 {
+  color: black;
+}
+
+h1 {
+  color: black;
+  font-size: 2vw;
+  margin: 1vw;
+}
+
+/* BODY */
+body {
+  color: black;
+  margin: 0;
+  background-color: #a8a9ad;
+  background-image: url(./images/background.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  font-family: "Racing Sans One", cursive;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  flex-direction: row;
+}
+nav {
+  display: flex;
+  align-items: center;
+  height: 13vw;
+  margin-left: 20vw;
+}
+
+.navButts {
+  margin: 2vw;
+  font-size: 1.7vw;
+  padding: 1vw 2vw 1vw 2vw;
+  background-color: darkred;
+  transform: skew(-25deg);
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border-radius: 1vw;
+}
+.navButts > span {
+  display: inline-block;
+  transform: skew(25deg);
+  text-decoration: none;
+  text-align: center;
+}
+
+#logo {
+  margin: 2vw 0 0 4vw;
+  width: 8vw;
+  height: 8vw;
+  background-image: url(./images/logo.png);
+  background-size: cover;
+}
+
+/* MAIN */
+/* TOP CONTAINER */
+.topImage {
+  width: auto;
+  height: 24vw;
 }
 
 .leftSide {
-  width: 40%;
+  /* width: 40%; */
   float: left;
 }
 
 .rightSide {
-  width: 50%;
+  /* width: 50%; */
   float: right;
   padding-top: 3vw;
 }
@@ -86,24 +140,65 @@ section {
   backdrop-filter: blur(15px);
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 #heritageContainer {
   margin-left: 5vw;
   margin-right: 5vw;
 }
 
+/* CAR / LINE */
+#carScroll {
+  display: flex;
+  align-content: center;
+  height: 1vw;
+  z-index: 20;
+  transform: translate3d(0);
+}
+
+.carScroll {
+  height: 10vw;
+  width: 4vw;
+  display: fixed;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* TIMELINE */
+#timeline {
+  text-align: center;
+  font-size: 2em;
+}
+.block h2 {
+  font-size: 2.3vw;
+}
+
+.blockImage {
+  width: auto;
+  height: 20vw;
+}
+
 .blockLeft {
   float: left;
-  width: 500rem;
+  width: 500vw;
 }
 
 .blockRight {
   float: right;
-  width: 100vw;
+  width: 500vw;
 }
 
 #textScroll {
   margin-left: 5vw;
   margin-right: 6vw;
+}
+
+.block {
+  width: 33vw;
+  height: auto;
 }
 
 .block1 {
@@ -130,68 +225,10 @@ section {
   float: right;
 }
 
-h2 {
-  color: black;
-}
-
-p {
-  color: black;
-}
-
-#timeline {
-  text-align: center;
-  font-size: 2em;
-}
-
-body {
-  color: black;
-  margin: 0;
-  background-color: #a8a9ad;
-  background-image: url(./images/background.png);
-  background-repeat: no-repeat;
-  background-size: 100vw;
-  font-family: "Racing Sans One", cursive;
-}
-header {
-  display: flex;
-  flex-direction: row;
-}
-nav {
-  display: flex;
-  align-items: center;
-  height: 13vw;
-  margin-left: 20vw;
-}
-
-.navButts {
-  margin: 2vw;
-  font-size: 1.7vw;
-  padding: 2vw;
-  background-color: rgba(250, 5, 21, 50%);
-  transform: skew(-25deg);
-  display: inline-block;
-  text-decoration: none;
-  color: black;
-  border-radius: 1vw;
-}
-.navButts > span {
-  display: inline-block;
-  transform: skew(25deg);
-  text-decoration: none;
-  text-align: center;
-}
-
-#logo {
-  margin: 2vw 0 0 4vw;
-  width: 8vw;
-  height: 8vw;
-  background-image: url(./images/logo.png);
-  background-size: cover;
-}
-
+/* FOOTER */
 footer {
   position: absolute;
-  top: 600vh;
+  top: 350vw;
   height: 10vw;
   width: 100%;
   background-image: url(./images/footerTexture.jpg);

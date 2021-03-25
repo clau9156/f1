@@ -1,0 +1,102 @@
+(function(){
+	window.msnt = {    
+            register: false,
+            blocked: false,
+            getDialogUrl: function () {
+                return this.register ? 'https://accounts.autosport.com/register?client_id=170&popup=1&response_type=code' : 'https://accounts.autosport.com/login?client_id=170&popup=1&response_type=code';
+            },
+            openLoginWindow : function(pm = false) {
+                if ('sessionStorage' in window) {
+                    sessionStorage.setItem('msnt_connected', 0);
+                }
+                
+                    var width = 375;
+                    var height = 670;
+                    var wWidth = window.innerWidth;
+                    var wHeight = window.innerHeight;
+                    var params = 'width=' + width + ',height=' + height + ', left=' + (wWidth / 2 - (width / 2)) + ', top=' + (wHeight / 2 - (height / 2));
+                    window.open(this.getDialogUrl() + (pm ? '&pm=1' : ''), '', params);
+            },
+            openIframeWindow : function(selector) {
+                if (this.blocked) {
+                    window.location = this.getDialogUrl();
+                    return;
+                } 
+                
+                if ('sessionStorage' in window) {
+                    sessionStorage.setItem('msnt_connected', 0);
+                }
+                
+                const el = document.querySelector(selector ? selector : '#msnt_popup') || document.createElement('div');
+                if (!selector || !el.id) {
+                    var width = 500; //375;
+                    var height = 800;
+                    var overlayStyle = 'position:fixed; z-index:100000; background:rgba(0, 0, 0, 0.7); width:100%;height:100%;left:0;top:0;';
+                    var style = 'position:absolute;background:white;max-width:' + width + 'px;width:100%;max-height:100%;height:' + height + 'px;left:50%; top:50%;transform: translate(-50%, -50%);';
+                    const closeEl = document.createElement('span');
+                    const popup = document.createElement('div');
+                    popup.innerHTML = '<iframe frameborder="0" src="' + this.getDialogUrl() + '" style="width:100%;height:100%"></iframe>';  
+
+                    el.setAttribute('id', 'msnt_popup');
+                    el.setAttribute('style', overlayStyle);
+
+                    popup.setAttribute('style', style);
+
+                    closeEl.setAttribute('style', 'position:absolute;cursor:pointer;top:0;right:7px;color:red;font-size:30px;');
+                    closeEl.textContent = '×';
+                    closeEl.onclick = () => { el.remove(); };
+
+                    popup.appendChild(closeEl);
+                    el.appendChild(popup);
+                    document.body.appendChild(el);
+                } else {
+                    el.innerHTML = '<iframe frameborder="0" src="' + this.getDialogUrl() + '" style="width:100%;height:100%"></iframe>';  
+                }
+                return el;
+            },
+            preAuth () {
+                var iframe = document.createElement('iframe');
+                    iframe.setAttribute('id', 'msnt_hidden_iframe');
+                    iframe.style.display = "none";
+                    iframe.src = window.msnt.getDialogUrl();
+                    document.body.appendChild(iframe);
+            },
+//            getAuth: function () {
+//                fetch(window.msnt.getAuthUrl(), {
+//                    credentials: 'include',
+//                    headers: {
+//                        'Content-Type': 'application/json',
+//                        'x-requested-with': 'XMLHttpRequest',
+//                    }
+//                }).then((response) => response.json()).then((data) => {
+//                    if (data.url) {
+////                        const parentUrl = new URL(data.url);
+////                        window.postMessage(data.url, parentUrl.protocol + '//' + parentUrl.host);
+//                        return data.url;
+//                    }
+//                }).catch (() => {
+//                    var iframe = document.createElement('iframe');
+//                        iframe.setAttribute('id', 'msnt_hidden_iframe');
+//                        iframe.style.display = "none";
+//                        iframe.src = window.msnt.getDialogUrl();
+//                        document.body.appendChild(iframe);
+//                });
+//                return false;
+//            }
+	}
+        
+        window.addEventListener("message", (event) => {
+            if (!window.msnt || !window.msnt.getDialogUrl().includes(event.origin)) {
+                return
+            }
+            if (event.data === 'blocked' && document.querySelector('#msnt_hidden_iframe')) {
+                window.msnt.blocked = true;
+                document.querySelector('#msnt_hidden_iframe').remove();
+            } else if (window.location.pathname != (new URL(event.data)).pathname) {
+                if ('sessionStorage' in window && sessionStorage.getItem('msnt_connected') != 1) {
+                    sessionStorage.setItem('msnt_connected', 1);
+                    window.location = event.data;
+                }
+            }
+        }, false);
+})();
