@@ -45,9 +45,15 @@ nav {
   background-size: cover;
 }
 
-main {
-  display: flex;
-  flex-direction: row;
+#contentholder {
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+}
+
+#info_top {
+  width: 100%;
+  height: 20vw;
+  padding: 1em;
 }
 
 .hover:hover {
@@ -56,8 +62,33 @@ main {
   stroke-width: 2;
 }
 
+#carholder {
+  width: 50vw;
+  height: 40vw;
+  display: flex;
+  flex-direction: row;
+}
+
+#configurate {
+  width: 50vw;
+  height: 40vw;
+}
+
+#car {
+  width: 50vw;
+  height: 20vw;
+  top: 30vw;
+}
+
+.outline {
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.15rem black);
+}
+
 
 #colorbox {
+  width: 43.5vw;
+  height: 5vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-area: tyres;
@@ -66,22 +97,10 @@ main {
   padding: 1em;
 }
 
-#carholder {
-  width: 80%;
-}
-#car {
-  width: 57vw;
-  height: 20vw;
-  top: 22vw;
-}
-
-.outline {
-  cursor: pointer;
-  filter: drop-shadow(0 0 0.15rem black);
-}
 
 #tyres {
-
+  width: 45vw;
+  height: 5vw;
     grid-area: tyres;
     box-shadow: 3px 3px 8px #ddd;
     border-radius: 1em;
@@ -118,6 +137,8 @@ main {
 
 
   #extra_parts {
+    width: 45vw;
+  height: 5vw;
     grid-area: tyres;
     box-shadow: 3px 3px 8px #ddd;
     border-radius: 1em;
@@ -149,6 +170,8 @@ main {
   }
   
   #sponsors {
+    width: 45vw;
+  height: 5vw;
     grid-area: tyres;
     box-shadow: 3px 3px 8px #ddd;
     border-radius: 1em;
@@ -182,6 +205,8 @@ main {
   }
   
   #teams {
+    width: 45vw;
+  height: 5vw;
     grid-area: tyres;
     box-shadow: 3px 3px 8px #ddd;
     border-radius: 1em;
@@ -224,8 +249,8 @@ footer {
 }
 
 h1 {
-  text-align: left;
-  font-size: small;
+  text-align: center;
+  font-size: large;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -246,39 +271,13 @@ span {
   display: none;
 }
 
-.wet {
+.tyre {
   position: absolute;
-  width: 50.5%;
-  height: 14vw;
-  top: 25.1vw;
+  width: 53.5%;
+  height: 16vw;
+  top: 26.9vw;
   left: 1.6vw;
-}
-
-.medium {
-  position: absolute;
-  width: 50.5%;
-  height: 14vw;
-  top: 25.1vw;
-  left: 1.6vw;
-
-}
-
-.soft {
-  position: absolute;
-  width: 50.5%;
-  height: 14vw;
-  top: 25.1vw;
-  left: 1.6vw;
-
-}
-
-.hard {
-  position: absolute;
-  width: 50.5%;
-  height: 14vw;
-  top: 25.1vw;
-  left: 1.6vw;
-
+  transform: rotate(-0.5deg);
 }
 
 /* Parts/FEATURES */
@@ -288,8 +287,8 @@ span {
   position: absolute;
   width: 22%;
   height: 10vw;
-  top: 27.5vw;
-  left: 36.2vw;
+  top: 33vw;
+  left: 39.2vw;
 }
 
 #frontwing:hover {
@@ -308,8 +307,9 @@ span {
   position: absolute;
   width: 15%;
   height: 8vw;
-  top: 17.3vw;
-  left: 1.6vw;
+  top: 22vw;
+  left: 2.3vw;
+  z-index: -1;
 }
 
 #halo {
@@ -317,8 +317,8 @@ span {
     position: absolute;
     width: 13%;
     height: 9vw;
-    top: 21.5vw;
-    left: 24vw;
+    top: 26.5vw;
+    left: 26vw;
 }
 
 /* Sponsors */
@@ -388,7 +388,67 @@ span {
   position: absolute;
   height: 30vw;
   left: 27vw;
-  z-index: -10;
 }
 
-/* Teams */
+.verstappen {
+  position: absolute;
+  height: 35vw;
+  left: 5vw;
+}
+
+.seb {
+  position: absolute;
+  left: 7vw;
+  height: 27vw;
+  top: 20vw;
+}
+
+.kimi {
+  position: absolute;
+  left: 11vw;
+  height: 25vw;
+  top: 20vw;
+}
+
+.lewis {
+  position: absolute;
+  left: 11vw;
+  height: 25vw;
+  top: 20vw;
+}
+
+.daniel {
+  position: absolute;
+  left: 9vw;
+  height: 26vw;
+  top: 20vw;
+}
+
+.gasly {
+  position: absolute;
+  left: 9vw;
+  height: 26vw;
+  top: 20vw;
+}
+/* Buttons */
+
+.arrow {
+  position: absolute;
+  background-color: darkred;
+  left: 25vw;
+  top: 46vw;
+  
+}
+
+.arrow1 {
+  position: absolute;
+  background-color: darkred;
+  left: 30vw;
+  top: 46vw;
+}
+
+#drivers {
+  position: absolute;
+  left: 26vw;
+  top: 48vw;
+}
