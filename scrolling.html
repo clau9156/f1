@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
     <title>Scrolling Page</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
@@ -27,11 +29,11 @@
         <div id="heritageContainer">
             <div class="leftSide">
                 <h1>F1 Heritage</h1>
-                <p>Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you?</p>
+                <p>The history of the formula 1 is about the history of the upgrades on the cars and defining regulations for the basic rules from the start and continued growing through the history of formula 1 regarding the safety and the capacity of the engine and how it all came together. It all comes together to bring us with a racing competition spirit and passion that serves manufacturers but as well brings entertainment and keeps the drivers.</p>
             </div> 
         </div> 
         <div class="rightSide">
-            <img class="topImage" src="./ideas/161833121_838877020025757_6262080753658276040_n.jpg" alt="image"/>
+            <img class="topImage" src="./images/collage.jpg" alt="image"/>
         </div>  
     </div>
     <section class="carLine">
@@ -50,15 +52,9 @@
     <section class="carLine">
          <div id="line">
             <svg>
-                <!-- <path d="M 840 0 l 0 3500" stroke="blue" stroke-width="4" fill="none"/> -->
-                <line  x="0" y1="0" y2="3500" stroke="black" stroke-width="6"/>
+                <line  x="0" y1="0" y2="4000" stroke="black" stroke-width="6"/>
             </svg>
         </div>
-        <!-- <div id="lines">
-            <svg width="1000" height="3500">
-                <line x1="100" x2="100" y="20" stroke="blue" stroke-width="4"/>
-            </svg>
-        </div> -->
     </section>
     <section id="textScroll">
         <div class="block block1">
@@ -97,7 +93,8 @@
         <div class="block block6">
             <h2>2006-present</h2>
             <img class="blockImage" src="./images/2006.jpg" alt="image"/>
-            <p>Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you? Hello there how are you?</p>
+            <p>In 2006 it was the last time there were two tyre manufacturers (Japanese manufacturer "Bridgestone" and French company "Michelin"), leaving Bridgestone as the sole supplier from 2007 and on. Later on in 2014 till now they are using hybrid engines.</p>
+            <p>FUN fact: Schumacher became a legend and everyone even people who dont watch know who Michael Schumacher is.</p>
         </div>
     </section>
 </main>
@@ -110,7 +107,7 @@
     <script>
         gsap.registerPlugin(ScrollTrigger);
 
-        gsap.to("#carScroll", {y: "240vw", ease:"linear", scrollTrigger:{trigger:"#line", markers:false, scrub:true, start:"top 50%", end:"bottom 70%", pin:false, toggleActions:"play pause resume reset"}});
+        gsap.to("#carScroll", {y: "270vw", ease:"linear", scrollTrigger:{trigger:"#line", markers:false, scrub:true, start:"top 50%", end:"bottom 70%", pin:false, toggleActions:"play pause resume reset"}});
         // gsap.from("#the_div", {duration: 2, x: "450vw", scrollTrigger:{trigger:"#the_div"}});
         gsap.from(".block1", {x: "-250vw", scrollTrigger:{trigger:"#timeline", markers:false, scrub:true, start:"top 100%", end:"bottom 25", pin:false, toggleActions:"play pause resume reset"}});        
         gsap.from(".block2", {x: "250vw", scrollTrigger:{trigger:".block1" , markers:false, scrub:true, start:"top 50%", end:"bottom 25%", pin:false, toggleActions:"play pause resume reset"}});

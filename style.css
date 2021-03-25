@@ -10,12 +10,21 @@ body {
 /* main {
   color: aliceblue;
 } */
-#list ul li {
-  display: inline-block;
+
+/* GENERAL */
+p {
+  color: black;
+  font-size: 1.2vw;
 }
 
-ul li {
-  display: inline-block;
+h2 {
+  color: black;
+}
+
+h1 {
+  color: black;
+  font-size: 2vw;
+  margin: 1vw;
 }
 
 section {
@@ -43,27 +52,11 @@ section {
 
 svg {
   width: 2vw;
-  height: 220vw;
+  height: 260vw;
 }
 
 #lines {
   z-index: 11;
-}
-
-/* GENERAL */
-p {
-  color: black;
-  font-size: 1.2vw;
-}
-
-h2 {
-  color: black;
-}
-
-h1 {
-  color: black;
-  font-size: 2vw;
-  margin: 1vw;
 }
 
 /* BODY */
@@ -113,6 +106,14 @@ nav {
   height: 8vw;
   background-image: url(./images/logo.png);
   background-size: cover;
+}
+
+#list ul li {
+  display: inline-block;
+}
+
+ul li {
+  display: inline-block;
 }
 
 /* MAIN */
@@ -228,7 +229,7 @@ nav {
 /* FOOTER */
 footer {
   position: absolute;
-  top: 350vw;
+  top: 380vw;
   height: 10vw;
   width: 100%;
   background-image: url(./images/footerTexture.jpg);
