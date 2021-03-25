@@ -65,6 +65,7 @@ footer {
  grid-template-columns: 1fr 1fr;
 }
 
+/* COLOR BOX */
 #colorbox svg {
   width: 6vw;
   height: 2vw;
@@ -86,27 +87,48 @@ footer {
   height: 0.5vw;
 }
 
+#firstteams {
+  margin-top: -1vw;
+}
+
+#secondteams {
+  margin-top: -1vw;
+}
+
+#thirdteams {
+  margin-top: -1vw;
+}
+
+/* Top Info  */
 #top_info {
   display: flex;
   flex-direction: column;
-margin: 2vw 1vw 1vw 1vw;
+background-color: rgba(250, 250, 250, 46%)
 }
 
 #top_info  h1 {
   width: 90vw;
-  text-align: left;
+  text-align: center;
+  margin-left: 3vw;
+  font-size: 2vw;
 }
 
 #top_info  p {
   width: 90vw;
-  margin-top:1vw ;
-  margin-bottom: 0;
-  font-size: 1vw;
+  margin-top:0vw ;
+  margin-bottom: 2vw;
+  font-size: 1.2vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 3vw;
+  text-align: center;
+  color: #000;
 }
 
 p {
   font-size: 1.5vw;
 }
+
+/* CAR */
 
 .hover:hover {
   cursor: pointer;
@@ -116,16 +138,22 @@ p {
 
 #carholder {
   margin-top: 10vw;
-  width: 50vw;
+  width: 60vw;
   height: 40vw;
   display: flex;
   flex-direction: row;
 }
 
+#car {
+  width: 58vw;
+  height: 20vw;
+  top: 4vw;
+}
+
 #configurate {
-  width: 50vw;
+  width: 40vw;
   height: 30vw;
-  margin-left: 8vw;
+  margin-left: 1vw;
 }
 
 #configurate h1 {
@@ -136,11 +164,6 @@ figure{
   margin: 2vw;
 }
 
-#car {
-  width: 50vw;
-  height: 20vw;
-  top: 30vw;
-}
 
 .outline {
   cursor: pointer;
@@ -320,13 +343,12 @@ span {
 
 #tyresHolder {
   position: absolute;
-  top: 43vw;
-  left: 1vw;
+  top: 35.9vw;
+  left: 1.3vw;
 }
 .tyre {
-  width: 45vw;
-  height: auto;
-
+  width: 51.5vw;
+  height: 15vw;
   transform: rotate(-0.5deg);
 }
 
@@ -337,8 +359,8 @@ span {
   position: absolute;
   width: 20vw;
   height: 10vw;
-  top: 47.3vw;
-  left: 31.2vw;
+  top: 41.8vw;
+  left: 38.7vw;
 }
 
 #frontwing:hover {
@@ -355,62 +377,61 @@ span {
 
 #rear {
   position: absolute;
-  width: 13vw;
+  width: 13.5vw;
   height: 8vw;
-  top: 38.5vw;
-  left: 1.4vw;
+  top: 31.2vw;
+  left: 2.9vw;
 }
 
 #halo {
 
     position: absolute;
-    width: 11vw;
+    width: 13.5vw;
     height: 9vw;
-    top: 42.3vw;
-    left: 21vw;
+    top: 35.1vw;
+    left: 24.2vw;
 }
 
 /* Sponsors */
 
 .sponsorsDis {
-  top: 39vw;
+  top: 31.8vw;
 }
 
 .redbul {
   position: absolute;
   width: 7vw;
-  height: 2.3vw;
-  left: 4vw;
+  height: 2.5vw;
+  left: 5.8vw;
 }
 
 .alpine {
   position: absolute;
   width: 8vw;
   height: 2.5vw;
-
-  left: 3.5vw;
+  left: 4.9vw;
 }
 
 .cogni {
   position: absolute;
   width: 7vw;
   height: 2.5vw;
-  left: 4vw;
+  left: 5.5vw;
 }
 
 .mission {
   position: absolute;
   width: 8vw;
   height: 2vw;
-  left: 4vw;
+  left: 5.2vw;
+  transform: rotate(-2.5deg);
 }
 
 .dell {
   position: absolute;
   width: 8vw;
   height: 2.9vw;
-
-  left: 3.8vw;
+  left: 5vw;
   transform: rotate(5deg);
 }
 
@@ -419,19 +440,43 @@ span {
   position: absolute;
   width: 7vw;
   height: 2.5vw;
-
-  left: 4vw;
+  left: 5.6vw;
   transform: rotate(3deg);
 }
 /* Teams */
 
-.amcogni {
+.rbracing {
   position: absolute;
-  width: 30vw;
+  width: 55vw;
   height: auto;
-  top: 40vw;
+  top: 30.8vw;
   left: 3vw;
 }
+
+.amcogni {
+  position: absolute;
+  width: 55vw;
+  height: auto;
+  top: 30.9vw;
+  left: 3vw;
+}
+
+.ferrari {
+  position: absolute;
+  width: 55vw;
+  height: auto;
+  top: 30.8vw;
+  left: 3vw;
+}
+
+.mclaren {
+  position: absolute;
+  width: 55vw;
+  height: auto;
+  top: 30.9vw;
+  left: 3vw;
+}
+
 /* Drivers */
 
 .slides {
@@ -441,7 +486,7 @@ span {
 }
 .driverContainer{
   position: absolute;
-  top: 25vw;
+  top: 23vw;
   left: 29vw;
   width: 15vw;
   height: 28vw;
@@ -454,23 +499,23 @@ span {
 }
 
 .seb {
-  height: 26vw;
-}
-
-.kimi {
-  height: 24vw;
-}
-
-.lewis {
   height: 25vw;
 }
 
+.kimi {
+  height: 23vw;
+}
+
+.lewis {
+  height: 22vw;
+}
+
 .daniel {
-  height: 26vw;
+  height: 24vw;
 }
 
 .gasly {
-  height: 26vw;
+  height: 24vw;
 }
 /* Buttons */
 
@@ -481,8 +526,8 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  left: 10vw;
-  top: 58vw;
+  left: 19vw;
+  top: 52vw;
 }
 .arrow {
   margin-right:2vw ;
@@ -506,6 +551,7 @@ span {
 }
 
 #drivers  h1 {
-  font-size: 1.8vw;
-  margin:0;
+  font-size: 1.3vw;
+  margin-top: 1vw;
+  font-family: "Racing Sans One", cursive;
 }
